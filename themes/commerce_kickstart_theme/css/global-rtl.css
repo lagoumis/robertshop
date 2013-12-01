@@ -76,6 +76,7 @@
 ul#payments li {
   float: right; }
 
+
 /**
  * Front page css.
  */
@@ -248,3 +249,8 @@ ul.facetapi-facetapi-checkbox-links li input {
 input.checkout-continue {
   margin-left: 10px;
   margin-right: 0px; }
+  
+  
+body {
+  background: red;
+}
