@@ -408,3 +408,20 @@ core = "7.x"
 project = "omega_kickstart"
 datestamp = "1374741378"
 
+;GOOGLE FONTS
+fonts[google_fonts_api][] = "Open Sans&subset=latin#300"
+fonts[google_fonts_api][] = "Open Sans&subset=latin#300italic"
+fonts[google_fonts_api][] = "Open Sans&subset=latin#600"
+fonts[google_fonts_api][] = "Open Sans&subset=latin-ext#600italic"
+fonts[google_fonts_api][] = "Open Sans&subset=latin#700"
+fonts[google_fonts_api][] = "Open Sans&subset=latin#700italic"
+fonts[google_fonts_api][] = "Open Sans&subset=latin#800"
+fonts[google_fonts_api][] = "Open Sans&subset=latin-ext#800italic"
+
+fonts[google_fonts_api][] = "Gentium Basic&subset=latin#700"
+fonts[google_fonts_api][] = "Gentium Basic&subset=latin#700italic"
+fonts[google_fonts_api][] = "Gentium Basic&subset=latin#italic"
+fonts[google_fonts_api][] = "Gentium Basic&subset=latin#regular"
+
+fonts[google_fonts_api][] = "Rock Salt&subset=latin#regular"
+

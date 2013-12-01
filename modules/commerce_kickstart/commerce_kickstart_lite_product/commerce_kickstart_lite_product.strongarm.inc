@@ -13,8 +13,43 @@ function commerce_kickstart_lite_product_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'comment_anonymous_product_display';
+  $strongarm->value = 0;
+  $export['comment_anonymous_product_display'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_default_mode_product_display';
+  $strongarm->value = 1;
+  $export['comment_default_mode_product_display'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_default_per_page_product_display';
+  $strongarm->value = '50';
+  $export['comment_default_per_page_product_display'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_form_location_product_display';
+  $strongarm->value = 1;
+  $export['comment_form_location_product_display'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_preview_product_display';
+  $strongarm->value = '1';
+  $export['comment_preview_product_display'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'comment_product_display';
-  $strongarm->value = '2';
+  $strongarm->value = '0';
   $export['comment_product_display'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -63,17 +98,23 @@ function commerce_kickstart_lite_product_strongarm() {
       'node_token' => array(
         'custom_settings' => FALSE,
       ),
+      'add_to_cart_confirmation_view' => array(
+        'custom_settings' => TRUE,
+      ),
+      'node_revision' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
         'sku' => array(
-          'weight' => '-10',
+          'weight' => '0',
         ),
         'title' => array(
           'weight' => '-5',
         ),
         'status' => array(
-          'weight' => '35',
+          'weight' => '13',
         ),
       ),
       'display' => array(
@@ -141,9 +182,16 @@ function commerce_kickstart_lite_product_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'revision' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
-      'form' => array(),
+      'form' => array(
+        'path' => array(
+          'weight' => '30',
+        ),
+      ),
       'display' => array(
         'product:sku' => array(
           'default' => array(
@@ -174,7 +222,7 @@ function commerce_kickstart_lite_product_strongarm() {
         'product:commerce_price' => array(
           'default' => array(
             'weight' => '1',
-            'visible' => TRUE,
+            'visible' => FALSE,
           ),
           'product_list' => array(
             'weight' => '2',
@@ -184,7 +232,7 @@ function commerce_kickstart_lite_product_strongarm() {
         'product:field_images' => array(
           'default' => array(
             'weight' => '4',
-            'visible' => TRUE,
+            'visible' => FALSE,
           ),
           'product_list' => array(
             'weight' => '0',
@@ -198,6 +246,60 @@ function commerce_kickstart_lite_product_strongarm() {
           ),
           'default' => array(
             'weight' => '5',
+            'visible' => FALSE,
+          ),
+        ),
+        'product:field_written_for' => array(
+          'default' => array(
+            'weight' => '2',
+            'visible' => TRUE,
+          ),
+        ),
+        'product:field_year_written' => array(
+          'default' => array(
+            'weight' => '4',
+            'visible' => TRUE,
+          ),
+        ),
+        'product:field_format' => array(
+          'default' => array(
+            'weight' => '5',
+            'visible' => TRUE,
+          ),
+        ),
+        'product:field_product_type' => array(
+          'default' => array(
+            'weight' => '6',
+            'visible' => TRUE,
+          ),
+        ),
+        'product:field_length' => array(
+          'default' => array(
+            'weight' => '7',
+            'visible' => FALSE,
+          ),
+        ),
+        'product:field_scored_for' => array(
+          'default' => array(
+            'weight' => '8',
+            'visible' => TRUE,
+          ),
+        ),
+        'product:field_preview_images' => array(
+          'default' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
+        ),
+        'product:field_description' => array(
+          'default' => array(
+            'weight' => '3',
+            'visible' => TRUE,
+          ),
+        ),
+        'product:field_audio_samples' => array(
+          'default' => array(
+            'weight' => '11',
             'visible' => FALSE,
           ),
         ),
@@ -230,6 +332,13 @@ function commerce_kickstart_lite_product_strongarm() {
     0 => 'status',
   );
   $export['node_options_product_display'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_preview_product_display';
+  $strongarm->value = '1';
+  $export['node_preview_product_display'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

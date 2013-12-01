@@ -11,7 +11,7 @@ function commerce_kickstart_lite_product_commerce_product_default_types() {
   $items = array(
     'product' => array(
       'type' => 'product',
-      'name' => 'Product',
+      'name' => 'Digital Sheet Music',
       'description' => 'A basic product type.',
       'help' => '',
       'revision' => '1',
@@ -25,9 +25,20 @@ function commerce_kickstart_lite_product_commerce_product_default_types() {
  */
 function commerce_kickstart_lite_product_ctools_plugin_api() {
   list($module, $api) = func_get_args();
+  if ($module == "context" && $api == "context") {
+    return array("version" => "3");
+  }
+  list($module, $api) = func_get_args();
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
+}
+
+/**
+ * Implements hook_views_api().
+ */
+function commerce_kickstart_lite_product_views_api() {
+  return array("version" => "3.0");
 }
 
 /**
@@ -111,7 +122,7 @@ function commerce_kickstart_lite_product_image_default_styles() {
 function commerce_kickstart_lite_product_node_info() {
   $items = array(
     'product_display' => array(
-      'name' => t('Product display'),
+      'name' => t('Digital Sheet Music'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',

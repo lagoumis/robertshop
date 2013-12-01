@@ -11,7 +11,6 @@
 * 2.1. Zone user
 **********************************************/
 .zone-user-wrapper {
-  position: fixed;
   z-index: 200; }
 
 /*******************************************
@@ -110,7 +109,6 @@
     /* LTR */ }
   .navigation .second-menu {
     clear: inherit;
-    float: right;
     /* LTR */
     margin-right: 0; }
 

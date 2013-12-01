@@ -47,44 +47,6 @@ function commerce_kickstart_block_menu_default_menu_links() {
     'expanded' => '1',
     'weight' => '-50',
   );
-  // Exported menu link: menu-footer-navigation_our-security-policy:node/8
-  $menu_links['menu-footer-navigation_our-security-policy:node/8'] = array(
-    'menu_name' => 'menu-footer-navigation',
-    'link_path' => 'node/8',
-    'router_path' => 'node/%',
-    'link_title' => 'Our security policy',
-    'options' => array(
-      'toolbar_expanded' => 0,
-      'toolbar_break' => 0,
-      'attributes' => array(),
-      'identifier' => 'menu-footer-navigation_our-security-policy:node/8',
-    ),
-    'module' => 'menu',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '-49',
-    'parent_identifier' => 'menu-footer-navigation_security--privacy:<nolink>',
-  );
-  // Exported menu link: menu-footer-navigation_press-links:node/6
-  $menu_links['menu-footer-navigation_press-links:node/6'] = array(
-    'menu_name' => 'menu-footer-navigation',
-    'link_path' => 'node/6',
-    'router_path' => 'node/%',
-    'link_title' => 'Press links',
-    'options' => array(
-      'attributes' => array(),
-      'identifier' => 'menu-footer-navigation_press-links:node/6',
-    ),
-    'module' => 'menu',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '-49',
-    'parent_identifier' => 'menu-footer-navigation_company-info:<nolink>',
-  );
   // Exported menu link: menu-footer-navigation_security--privacy:<nolink>
   $menu_links['menu-footer-navigation_security--privacy:<nolink>'] = array(
     'menu_name' => 'menu-footer-navigation',
@@ -100,7 +62,7 @@ function commerce_kickstart_block_menu_default_menu_links() {
     'module' => 'menu',
     'hidden' => '0',
     'external' => '0',
-    'has_children' => '1',
+    'has_children' => '0',
     'expanded' => '1',
     'weight' => '-48',
   );
@@ -119,29 +81,9 @@ function commerce_kickstart_block_menu_default_menu_links() {
     'module' => 'menu',
     'hidden' => '0',
     'external' => '0',
-    'has_children' => '1',
+    'has_children' => '0',
     'expanded' => '1',
     'weight' => '-49',
-  );
-  // Exported menu link: menu-footer-navigation_service-agreements:node/7
-  $menu_links['menu-footer-navigation_service-agreements:node/7'] = array(
-    'menu_name' => 'menu-footer-navigation',
-    'link_path' => 'node/7',
-    'router_path' => 'node/%',
-    'link_title' => 'Service agreements',
-    'options' => array(
-      'toolbar_expanded' => 0,
-      'toolbar_break' => 0,
-      'attributes' => array(),
-      'identifier' => 'menu-footer-navigation_service-agreements:node/7',
-    ),
-    'module' => 'menu',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '-50',
-    'parent_identifier' => 'menu-footer-navigation_service--support:<nolink>',
   );
   // Exported menu link: menu-footer-navigation_shipping--returns:<nolink>
   $menu_links['menu-footer-navigation_shipping--returns:<nolink>'] = array(
@@ -158,47 +100,9 @@ function commerce_kickstart_block_menu_default_menu_links() {
     'module' => 'menu',
     'hidden' => '0',
     'external' => '0',
-    'has_children' => '1',
+    'has_children' => '0',
     'expanded' => '1',
     'weight' => '-47',
-  );
-  // Exported menu link: menu-footer-navigation_shipping-fees:node/5
-  $menu_links['menu-footer-navigation_shipping-fees:node/5'] = array(
-    'menu_name' => 'menu-footer-navigation',
-    'link_path' => 'node/5',
-    'router_path' => 'node/%',
-    'link_title' => 'Shipping fees',
-    'options' => array(
-      'toolbar_expanded' => 0,
-      'toolbar_break' => 0,
-      'attributes' => array(),
-      'identifier' => 'menu-footer-navigation_shipping-fees:node/5',
-    ),
-    'module' => 'menu',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '1',
-    'expanded' => '0',
-    'weight' => '-50',
-    'parent_identifier' => 'menu-footer-navigation_shipping--returns:<nolink>',
-  );
-  // Exported menu link: menu-footer-navigation_terms-of-use:node/3
-  $menu_links['menu-footer-navigation_terms-of-use:node/3'] = array(
-    'menu_name' => 'menu-footer-navigation',
-    'link_path' => 'node/3',
-    'router_path' => 'node/%',
-    'link_title' => 'Terms of use',
-    'options' => array(
-      'attributes' => array(),
-      'identifier' => 'menu-footer-navigation_terms-of-use:node/3',
-    ),
-    'module' => 'menu',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '-50',
-    'parent_identifier' => 'menu-footer-navigation_security--privacy:<nolink>',
   );
   // Exported menu link: menu-payment-methods_american-express:<front>
   $menu_links['menu-payment-methods_american-express:<front>'] = array(
@@ -306,7 +210,7 @@ function commerce_kickstart_block_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '2',
+    'weight' => '-49',
   );
   // Exported menu link: secondary-navigation_contact:node/1
   $menu_links['secondary-navigation_contact:node/1'] = array(
@@ -322,7 +226,7 @@ function commerce_kickstart_block_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '1',
+    'weight' => '-46',
   );
   // Translatables
   // Included for use with string extractors like potx.
@@ -332,15 +236,10 @@ function commerce_kickstart_block_menu_default_menu_links() {
   t('Company info');
   t('Contact');
   t('MasterCard');
-  t('Our security policy');
   t('PayPal');
-  t('Press links');
   t('Security & privacy');
   t('Service & support');
-  t('Service agreements');
   t('Shipping & returns');
-  t('Shipping fees');
-  t('Terms of use');
   t('Visa');
 
 
