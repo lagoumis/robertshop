@@ -4,6 +4,10 @@
   background: #fff;
 }
 
+body {
+  background: #262626;
+}  
+  
 .zone-content-wrapper .zone-content {
   margin-bottom: 0;
 }
@@ -38,8 +42,12 @@
   margin-bottom: 20px !important;
 }
 
-/* STYLES */
+/* LAYOUT */
+.page-node-13 .tabs {
+  display: none;
+}
 
+/* STYLES */
 h1, 
 h2, 
 h3,
@@ -472,8 +480,80 @@ hr {
 }
 
 #page .form-submit:hover {
-  background: #292929;
+  background: #424242;
   color: #fff;
   border: none;
 }
 
+/** Home: bio box **/
+#block-boxes-home-bio-box {
+  border: solid 1px #cccccc;
+  height: 115px;
+}
+
+#block-boxes-home-bio-box h5 {
+  font-size: 27px;
+}
+
+#block-boxes-home-bio-box img {
+  float: left;
+}
+
+#block-boxes-home-bio-box .bio-info {
+  display: inline-block;
+  margin-top: 27px;
+  margin-left: -10px;
+}
+
+#block-boxes-home-bio-box .bio-info p {
+  margin-top: -3px;
+}
+
+#block-boxes-home-bio-box a {
+  float: right;
+  margin-top: 54px;
+  margin-right: 14px;
+  text-decoration: none;
+}
+
+#block-boxes-home-bio-box a:hover {
+  text-decoration: none;
+}
+
+/* Home: Contact form */
+#block-webform-client-block-18 {
+  padding-bottom: 30px;
+}
+
+#block-webform-client-block-18  header {
+  display: none;
+}
+
+#block-webform-client-block-18 .block-title {
+  background: #181818;
+  color: #fff;
+  font-family: "gill sans", "open sans", sans-serif;
+  font-size: 13px;
+  font-weight: 100;
+  height: 41px;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 0px 0 0px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#block-webform-client-block-18 .block-inner > .content {
+  border: solid 1px #cfcfcf;
+  border-top: none;
+  padding: 8px 10px 10px 10px;
+}
+
+#block-webform-client-block-18 .form-item {
+  margin: 8px 0;
+}
+
+#block-webform-client-block-18 .form-actions  input {
+  float: right;
+  margin: 0;
+}

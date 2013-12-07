@@ -793,12 +793,6 @@ select {
     display: none;
     text-indent: -9999px; }
 
-.front .node {
-  border: 1px solid #E0E3E6;
-  display: block;
-  margin: 15px 0px;
-  padding: 10px 15px;
-  width: auto; }
   .front .node h2 {
     font-size: 18px;
     font-weight: 400;
