@@ -145,7 +145,7 @@ function commerce_kickstart_lite_product_strongarm() {
         'status' => array(
           'default' => array(
             'weight' => '6',
-            'visible' => FALSE,
+            'visible' => TRUE,
           ),
           'node_product_list' => array(
             'weight' => '4',
@@ -222,7 +222,7 @@ function commerce_kickstart_lite_product_strongarm() {
         'product:commerce_price' => array(
           'default' => array(
             'weight' => '1',
-            'visible' => FALSE,
+            'visible' => TRUE,
           ),
           'product_list' => array(
             'weight' => '2',
@@ -276,7 +276,7 @@ function commerce_kickstart_lite_product_strongarm() {
         'product:field_length' => array(
           'default' => array(
             'weight' => '7',
-            'visible' => FALSE,
+            'visible' => TRUE,
           ),
         ),
         'product:field_scored_for' => array(

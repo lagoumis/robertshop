@@ -1273,8 +1273,15 @@ function commerce_kickstart_lite_product_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'settings' => array(),
-          'type' => 'hidden',
+          'module' => 'commerce_cart',
+          'settings' => array(
+            'combine' => 1,
+            'default_quantity' => '1',
+            'line_item_type' => 'product',
+            'show_quantity' => 1,
+            'show_single_product_attributes' => 0,
+          ),
+          'type' => 'commerce_cart_add_to_cart_form',
           'weight' => '3',
         ),
         'product_list' => array(

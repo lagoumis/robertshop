@@ -1,9 +1,13 @@
 name = Global
 core = 7.x
 package = Features
+php = 5.2.4
 dependencies[] = block
+dependencies[] = boxes
 dependencies[] = context
 dependencies[] = ctools
+features[box][] = copyright_box
 features[context][] = global
+features[ctools][] = boxes:box:1
 features[ctools][] = context:context:3
 features[features_api][] = api:1
