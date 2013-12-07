@@ -4,6 +4,15 @@
   background: #fff;
 }
 
+.zone-content-wrapper .zone-content {
+  margin-bottom: 0;
+}
+
+.zone-footer-wrapper {
+  padding-top: 3px;
+  padding-bottom: 21px;
+}
+
 #region-header-first {
   margin: 0;
   width: 960px;
@@ -23,6 +32,10 @@
 
 #zone-content {
   padding-top: 20px;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px !important;
 }
 
 /* STYLES */
@@ -111,7 +124,7 @@ h6 a:hover {
 
 p, 
 li {
-  color: #535353;
+  color: #737373;
   font-family: "open sans";
   font-weight: normal;
   font-size: 13px;
@@ -212,11 +225,42 @@ hr {
   padding: 9px 0 10px 0;
 }
 
+/**FOOTER**/
+#zone-footer-wrapper {
+  background: #181818;
+}
+
+#block-boxes-copyright-box .boxes-box-content {
+  color: #515151;
+  font-family: "open sans";
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+#block-boxes-copyright-box .symbol {
+  display: block;
+  float: left;
+  font-size: 19px;
+  font-weight: 200;
+  margin-right: 6px;
+  
+}
+
+#block-boxes-copyright-box .text {
+  font-size: 12px;
+  float: left;
+  margin-top: 5px;
+}
+
+#block-boxes-copyright-box {
+  float: right;
+}
+
 /*GDAY BOX*/
 #block-block-2 {
   position: absolute;
-  top: 48px;
-  right: 51px;
+  top: 31px;
+  right: 36px;
 }
 
 .header-message {
@@ -297,6 +341,7 @@ hr {
   border: solid 1px #cfcfcf;
   border-top: none;
   padding: 20px;
+  padding-right: 25px;
 }
 
 .text-area p {
@@ -307,7 +352,7 @@ hr {
 
 /** FRIENDS OF ROB **/
 #block-boxes-friends-rob .text-area p {
-  font-size: 14px;
+  font-size: 11px;
 }
 
 #block-boxes-friends-rob .text-area h6 {
@@ -327,9 +372,10 @@ hr {
 #block-boxes-contact-details-box .subhead {
   font-size: 13px;
   font-style: italic;
+  font-family: gentium;
   letter-spacing: 1px;
-  margin-top: -2px;
-  margin-bottom: 20px;
+  margin-top: -6px;
+  margin-bottom: 25px;
 }
 
 #block-boxes-contact-details-box p {
@@ -342,17 +388,27 @@ hr {
 }
 
 #block-boxes-contact-details-box .text {
+  color: #494949;
   font-size: 15px;
-  float: left;
+  font-family: gentium;
+  font-weight: 600;
   margin-top: 8px;
+  margin-bottom: 5px;
   line-height: 16px;
-  width: 100px;
+}
+
+#block-boxes-contact-details-box .small-text {
+  color: #8a8a8a;
+  font-size: 11px;
+  line-height: 14px;
+  margin-left: 60px;
 }
 
 #block-boxes-contact-details-box .email {
   color: #333;
   clear: left;
   font-weight: bold;
+  font-family: "gentium";
   font-size: 16px;
   letter-spacing: 1px;
   margin-bottom: 33px;
@@ -361,7 +417,8 @@ hr {
 }
 
 #block-boxes-contact-details-box .small {
-  font-size: 12px;
+  font-size: 11px;
+  font-family: gentium;
   clear: left;
   padding-top: 10px;
   line-height: 13px;
