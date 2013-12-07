@@ -62,6 +62,11 @@ body {
   width: 220px;
 }
 
+.ds-3col > .group-middle {
+ width: 440px;
+  padding: 10px 10px 0 10px;
+}
+
 #page-title {
   display: none;
 }
@@ -220,9 +225,9 @@ hr {
 
 .subhead {
   color: #bababa;
-  font-family: gentium;
+  font-family: "open sans", sans-serif;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 13px;
   font-style: italic;
   line-height: 25px;
   margin-top: -10px;
@@ -645,4 +650,69 @@ hr {
 
 .node-product-type .field-type-commerce-product-reference form.commerce-add-to-cart .form-item {
   padding: 11px 0 20px 0;
+}
+
+/* Music: audio samples */
+.node-product-display .field-name-field-audio-samples {
+  border: solid 1px #CFCFCF;
+  border-top: none;
+  position: relative;
+  padding: 60px 25px 15px 20px;
+}
+
+.node-product-display .field-name-field-audio-samples .label-above {
+  background: #181818;
+  display: block;
+  width: 205px;
+  position: absolute; top: 0; left: 0;
+  margin-left: -1px;
+  color: #fff;
+  font-family: "open sans", sans-serif;
+  font-size: 13px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 8px 0 8px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.node-product-display .field-name-field-audio-samples .file {
+  background: url(../my-images/audio-icon.png) no-repeat 0 0;
+  display: block;
+  margin-bottom: 15px;
+  padding-left: 30px;
+}
+
+.node-product-display .field-name-field-audio-samples .file img {
+  display: none;
+}
+
+/* Music:  Node */
+.node-product-display .commerce-product-field-field-written-for {
+  margin-top: -8px;
+}
+
+.node-product-display .group-middle .field-item {
+  color: #737373;
+  font-family: "open sans", sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.node-product-display .field-label,
+.node-product-display  .commerce-product-field-field-description {
+  font-family: gentium;
+  font-size: 16px;
+  margin-right: 3px;
+  font-weight: 600;
+}
+
+.node-product-type .field-name-commerce-price {
+  font-family: gentium;
+}
+
+.node-product-display .commerce-product-field-field-description {
+  margin: 15px 0 30px 0;
 }
