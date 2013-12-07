@@ -6,6 +6,7 @@ screenshot = 'screenshot.png'
 base theme = 'omega'
 
 scripts[] = js/omega_kickstart.js
+scripts[] = js/custom.js
 
 regions[page_top] = 'Page Top'
 regions[page_bottom] = 'Page Bottom'
@@ -52,6 +53,10 @@ zones[postscript] = 'Postscript'
 css[global.css][name] = 'Your custom global styles'
 css[global.css][description] = 'This file holds all the globally active custom CSS of your theme.'
 css[global.css][options][weight] = '10'
+
+css[custom-mobile.css][name] = 'Your custom mobile styles'
+css[custom-mobile.css][description] = 'Amanda's mobile themes'
+css[custom-mobile.css][options][weight] = '11'
 
 settings[alpha_grid] = 'alpha_default'
 settings[alpha_primary_alpha_default] = 'normal'

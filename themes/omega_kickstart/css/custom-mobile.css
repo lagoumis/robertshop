@@ -1,0 +1,422 @@
+/* GLOBAL */
+#zone-content,
+#zone-branding-wrapper { /** white background**/
+  background: #fff;
+}
+
+#region-header-first {
+  margin: 0;
+  width: 960px;
+}
+
+#zone-menu-wrapper {
+ background: #181818;
+}
+
+.ds-3col > .group-right {
+  width: 220px;
+}
+
+#page-title {
+  display: none;
+}
+
+#zone-content {
+  padding-top: 20px;
+}
+
+/* STYLES */
+
+h1, 
+h2, 
+h3,
+h4,
+h5,
+h6 {
+  color: #070707;
+  font-family: gentium;
+  font-weight: normal;
+  letter-spacing: 0px;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 51px;
+}
+
+h2,
+h2 a:link,
+h2 a:visited {
+  font-size: 40px;
+  line-height: 42px;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+h2 a:hover {
+  text-decoration: underline;
+}
+
+h3,
+h3 a:link,
+h3 a:visited {
+  font-size: 35px;
+  line-height: 37px;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+h3 a:hover {
+  text-decoration: underline;
+}
+
+h4,
+h4 a:link,
+h4 a:visited {
+  font-size: 30px;
+  line-height: 29px;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+h4 a:hover {
+  text-decoration: underline;
+}
+
+h5,
+h5 a:link,
+h5 a:visited {
+  font-size: 25px;
+  line-height: 27px;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+h5 a:hover {
+  text-decoration: underline;
+}
+
+h6,
+h6 a:link,
+h6 a:visited {
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+h6 a:hover {
+  text-decoration: underline;
+}
+
+p, 
+li {
+  color: #535353;
+  font-family: "open sans";
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+p strong {
+  color: #5c5c5c;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a:link, 
+a:visited {
+  color: #333;
+}
+
+a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+sup {
+  vertical-align: super;
+  font-size: 10px;
+}
+
+sub {
+  vertical-align: sub;
+  font-size: 10px;
+}
+
+blockquote {
+  background: url("../images/block.png") no-repeat 0 2px;
+  padding-left: 55px;
+  margin: 10px 60px 10px 0;
+}
+
+blockquote p {
+  color: #989898;
+  font-size: 15px;
+  font-style: italic;
+  letter-spacing: 1px;
+  line-height: 25px;
+  min-height: 37px;
+}
+
+hr {
+  background: #efefef;
+}
+
+.subhead {
+  color: #bababa;
+  font-family: gentium;
+  font-weight: normal;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 25px;
+  margin-top: -10px;
+}
+
+/* MAIN MENU */
+#secondary-menu li a {
+  border-right: solid 1px #8A8A8A;
+  color: #FFF;
+  font-family: "gill sans", "open sans", sans-serif;
+  font-weight: 200;
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding: 0px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#secondary-menu li.first a {
+  border-left: none;
+  padding-left: 0;
+}
+
+#secondary-menu li.last a {
+  border-right: none;
+}
+
+#secondary-menu li a:hover, 
+#secondary-menu li.active a {
+  text-decoration: underline;
+}
+
+#secondary-menu li {
+  padding: 0;
+  margin: 0;
+}
+
+#zone-menu-wrapper .navigation {
+  margin: 0;
+  padding: 9px 0 10px 0;
+}
+
+/*GDAY BOX*/
+#block-block-2 {
+  position: absolute;
+  top: 48px;
+  right: 51px;
+}
+
+.header-message {
+  background: #181818;
+  height: 179px;
+  padding: 30px;
+  width: 280px;
+}
+
+.header-message h2 {
+  color: #FFF;
+  font-family: gentium;
+  font-size: 27px;
+  margin-bottom: 0;
+}
+
+#block-block-2 .text {
+  font: 16px "gill sans", "open sans", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+  line-height: 20px;
+}
+
+#block-block-2 .signature {
+  color: #FFF;
+  font-family: "rock salt";
+  float: right;
+  font-size: 16px;
+}
+
+/*HEADSHOT BOX*/
+#block-boxes-about-headshot img {
+  margin-bottom: 20px;
+}
+
+#block-boxes-about-headshot .quote {
+  color: #bababa;
+  font-style: italic;
+  font-size: 20px;
+  font-family: "gill sans", "open sans", sans-serif;
+  font-weight: 200;
+  line-height: 26px;
+  margin: 0 10px 10px 10px;
+}
+
+#block-boxes-about-headshot p em {
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+/* SMALL HEADER AND TEXT AREA */
+.small-header {
+  background: #181818;
+}
+
+.small-header p,
+.small-header p a {
+  color: #fff;
+  font-family: "gill sans", "open sans", sans-serif;
+  font-size: 13px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 8px 0 8px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.small-header p a:hover {
+  text-decoration: underline;
+}
+
+.text-area h6 {
+  margin-bottom: 10px;
+}
+
+.text-area {
+  border: solid 1px #cfcfcf;
+  border-top: none;
+  padding: 20px;
+}
+
+.text-area p {
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "open sans";
+}
+
+/** FRIENDS OF ROB **/
+#block-boxes-friends-rob .text-area p {
+  font-size: 14px;
+}
+
+#block-boxes-friends-rob .text-area h6 {
+  margin-bottom: 0px;
+}
+
+#block-boxes-friends-rob .text-area p a {
+  color: #747474;
+  text-decoration: none;
+}
+
+#block-boxes-friends-rob .text-area p a:hover {
+  text-decoration: underline;
+}
+
+/** CONTACT DETAILS **/
+#block-boxes-contact-details-box .subhead {
+  font-size: 13px;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-top: -2px;
+  margin-bottom: 20px;
+}
+
+#block-boxes-contact-details-box p {
+  margin: 0;
+}
+
+#block-boxes-contact-details-box img {
+  float: left;
+  margin-right: 15px;
+}
+
+#block-boxes-contact-details-box .text {
+  font-size: 15px;
+  float: left;
+  margin-top: 8px;
+  line-height: 16px;
+  width: 100px;
+}
+
+#block-boxes-contact-details-box .email {
+  color: #333;
+  clear: left;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 33px;
+  padding-top: 7px;
+  text-decoration: underline;
+}
+
+#block-boxes-contact-details-box .small {
+  font-size: 12px;
+  clear: left;
+  padding-top: 10px;
+  line-height: 13px;
+}
+
+/* CONTACT FORM */
+.page-node-1 .node p {
+  margin-bottom: 0;
+}
+
+/** CONTACT FORM **/
+#block-webform-client-block-3 .block-title {
+  display: none;
+}
+
+.webform-component input,
+.webform-component textarea {
+  background: #ebebeb;
+  border: solid 1px #d2d2d2;
+  color: #3f3f3f;
+  font-family: gentium;
+  font-style: italic;
+  font-size: 15px;
+  width: 100%;
+}
+
+.webform-component textarea {
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+.webform-component .grippie {
+  display: none;
+}
+
+.webform-component input {
+  height: 40px;
+  padding-left: 15px;
+}
+
+#page .form-submit {
+  color: #fff;
+  background: #181818;
+  border: none;
+  font: 19px "gentium";
+  -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;
+  letter-spacing: 1px;
+  padding: 9px 12px;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+
+#page .form-submit:hover {
+  background: #292929;
+  color: #fff;
+  border: none;
+}
+
