@@ -21,9 +21,16 @@ function contact_page_default_box() {
     'body' => array(
       'value' => '<div class="small-header"><p>Contact details</p></div>
 <div class="text-area">
-<h5>Robert Sims</h5><p class="subhead">Based in Melbourne</p><img src="/profiles/robsims/themes/custom/robsims_theme/images/email-icon.png" width="44px" height="38px"/><p class="text">Preferred form of contact</p><p class="email"><a href="mailto:rob@gmail.com">rob@gmail.com</a></p><img src="/profiles/robsims/themes/custom/robsims_theme/images/phone-icon.png" width="47px" height="38px"/><p class="text">Currently not available</p><p class="small">**If you prefer to talk over the phone you can email me your number and I will call you</p></div>',
+<h4>Robert Sims</h4><p class="subhead">Based in Melbourne</p>
+
+<img src="/profiles/commerce_kickstart/themes/omega_kickstart/my-images/email-icon.png" width="44px" height="38px"/><p class="text">Preferred form of contact</p><p class="small-text margin-bottom-20">Fill out your details in the form to email Rob</p>
+
+<img src="/profiles/commerce_kickstart/themes/omega_kickstart/my-images/phone-icon.png" width="47px" height="38px"/><p class="text">Currently not available</p><p class="small-text">If you prefer to talk over the phone you can email me your number and I will call you</p>
+
+</div>',
       'format' => 'php_code',
     ),
+    'additional_classes' => '',
   );
   $export['contact_details_box'] = $box;
 

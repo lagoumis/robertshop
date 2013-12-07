@@ -114,7 +114,7 @@ function commerce_kickstart_lite_product_strongarm() {
           'weight' => '-5',
         ),
         'status' => array(
-          'weight' => '13',
+          'weight' => '14',
         ),
       ),
       'display' => array(
@@ -195,7 +195,7 @@ function commerce_kickstart_lite_product_strongarm() {
       'display' => array(
         'product:sku' => array(
           'default' => array(
-            'weight' => '7',
+            'weight' => '24',
             'visible' => FALSE,
           ),
           'product_list' => array(
@@ -205,13 +205,13 @@ function commerce_kickstart_lite_product_strongarm() {
         ),
         'product:title' => array(
           'default' => array(
-            'weight' => '6',
+            'weight' => '22',
             'visible' => FALSE,
           ),
         ),
         'product:status' => array(
           'default' => array(
-            'weight' => '8',
+            'weight' => '25',
             'visible' => FALSE,
           ),
           'product_list' => array(
@@ -221,7 +221,7 @@ function commerce_kickstart_lite_product_strongarm() {
         ),
         'product:commerce_price' => array(
           'default' => array(
-            'weight' => '1',
+            'weight' => '9',
             'visible' => TRUE,
           ),
           'product_list' => array(
@@ -231,7 +231,7 @@ function commerce_kickstart_lite_product_strongarm() {
         ),
         'product:field_images' => array(
           'default' => array(
-            'weight' => '4',
+            'weight' => '20',
             'visible' => FALSE,
           ),
           'product_list' => array(
@@ -245,62 +245,62 @@ function commerce_kickstart_lite_product_strongarm() {
             'visible' => FALSE,
           ),
           'default' => array(
-            'weight' => '5',
+            'weight' => '21',
             'visible' => FALSE,
           ),
         ),
         'product:field_written_for' => array(
           'default' => array(
-            'weight' => '2',
+            'weight' => '1',
             'visible' => TRUE,
           ),
         ),
         'product:field_year_written' => array(
           'default' => array(
-            'weight' => '4',
+            'weight' => '3',
             'visible' => TRUE,
           ),
         ),
         'product:field_format' => array(
           'default' => array(
-            'weight' => '5',
+            'weight' => '4',
             'visible' => TRUE,
           ),
         ),
         'product:field_product_type' => array(
           'default' => array(
-            'weight' => '6',
+            'weight' => '5',
             'visible' => TRUE,
           ),
         ),
         'product:field_length' => array(
           'default' => array(
-            'weight' => '7',
+            'weight' => '6',
             'visible' => TRUE,
           ),
         ),
         'product:field_scored_for' => array(
           'default' => array(
-            'weight' => '8',
+            'weight' => '7',
             'visible' => TRUE,
           ),
         ),
         'product:field_preview_images' => array(
           'default' => array(
-            'weight' => '10',
+            'weight' => '27',
             'visible' => FALSE,
           ),
         ),
         'product:field_description' => array(
           'default' => array(
-            'weight' => '3',
+            'weight' => '2',
             'visible' => TRUE,
           ),
         ),
         'product:field_audio_samples' => array(
           'default' => array(
             'weight' => '11',
-            'visible' => FALSE,
+            'visible' => TRUE,
           ),
         ),
       ),

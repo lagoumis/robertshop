@@ -19,9 +19,10 @@ function global_default_box() {
   $box->description = 'Copyright box';
   $box->options = array(
     'body' => array(
-      'value' => '<span class="symbol">©</span><span class="text">Copyright Rob Sims 2013</span>',
+      'value' => '<span class="symbol">©</span><span class="text">Copyright 2013 by Rob Sims</span>',
       'format' => 'php_code',
     ),
+    'additional_classes' => '',
   );
   $export['copyright_box'] = $box;
 

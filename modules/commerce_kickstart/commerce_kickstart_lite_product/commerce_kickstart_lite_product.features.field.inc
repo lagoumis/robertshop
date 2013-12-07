@@ -136,7 +136,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
           'currency_code' => 'default',
         ),
         'type' => 'commerce_price_full',
-        'weight' => '12',
+        'weight' => '13',
       ),
     ),
   );
@@ -243,7 +243,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'media_generic',
-        'weight' => '11',
+        'weight' => '16',
       ),
     ),
   );
@@ -1282,7 +1282,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
             'show_single_product_attributes' => 0,
           ),
           'type' => 'commerce_cart_add_to_cart_form',
-          'weight' => '3',
+          'weight' => '10',
         ),
         'product_list' => array(
           'label' => 'above',
@@ -1372,7 +1372,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
           'label' => 'inline',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '6',
+          'weight' => '23',
         ),
         'product_list' => array(
           'label' => 'above',

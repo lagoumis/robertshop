@@ -1,7 +1,39 @@
+/** OVERRIDES**/
+.node-product-type .field-type-commerce-product-reference form.commerce-add-to-cart,
+.node-product-type .field-type-commerce-product-reference {
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+.section-content {
+  min-height: 0;
+}
+
+.node-product-type .field-type-commerce-product-reference form.commerce-add-to-cart label {
+  width: auto;
+}
+
+.node-product-type .field-name-field-product form.commerce-add-to-cart label {
+  float: none !important;
+}
+
+#node_product_display_full_group_add .field-type-commerce-price {
+  margin-bottom: 0px;
+}
+
 /* GLOBAL */
 #zone-content,
 #zone-branding-wrapper { /** white background**/
   background: #fff;
+}
+
+#zone-content {
+  min-height: 500px;
+}
+
+.no-margin {
+  margin-bottom: 0;
 }
 
 body {
@@ -133,7 +165,7 @@ h6 a:hover {
 p, 
 li {
   color: #737373;
-  font-family: "open sans";
+  font-family: "open sans", sans-serif;
   font-weight: normal;
   font-size: 13px;
   line-height: 22px;
@@ -200,7 +232,7 @@ hr {
 #secondary-menu li a {
   border-right: solid 1px #8A8A8A;
   color: #FFF;
-  font-family: "gill sans", "open sans", sans-serif;
+  font-family: "open sans", sans-serif;
   font-weight: 200;
   font-size: 13px;
   letter-spacing: 1px;
@@ -240,7 +272,7 @@ hr {
 
 #block-boxes-copyright-box .boxes-box-content {
   color: #515151;
-  font-family: "open sans";
+  font-family: "open sans", sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
 }
@@ -286,9 +318,10 @@ hr {
 }
 
 #block-block-2 .text {
-  font: 16px "gill sans", "open sans", sans-serif;
+  font-family: "open sans", sans-serif;
   font-weight: 200;
   font-style: italic;
+  font-size: 14px;
   line-height: 20px;
 }
 
@@ -308,7 +341,7 @@ hr {
   color: #bababa;
   font-style: italic;
   font-size: 20px;
-  font-family: "gill sans", "open sans", sans-serif;
+  font-family: "open sans", sans-serif;
   font-weight: 200;
   line-height: 26px;
   margin: 0 10px 10px 10px;
@@ -327,7 +360,7 @@ hr {
 .small-header p,
 .small-header p a {
   color: #fff;
-  font-family: "gill sans", "open sans", sans-serif;
+  font-family: "open sans", sans-serif;
   font-size: 13px;
   font-weight: 100;
   letter-spacing: 2px;
@@ -355,7 +388,7 @@ hr {
 .text-area p {
   font-size: 12px;
   line-height: 18px;
-  font-family: "open sans";
+  font-family: "open sans", sans-serif;
 }
 
 /** FRIENDS OF ROB **/
@@ -378,9 +411,9 @@ hr {
 
 /** CONTACT DETAILS **/
 #block-boxes-contact-details-box .subhead {
-  font-size: 13px;
+  font-size: 12px;
   font-style: italic;
-  font-family: gentium;
+  font-family: "open sans", sans-serif;
   letter-spacing: 1px;
   margin-top: -6px;
   margin-bottom: 25px;
@@ -474,6 +507,7 @@ hr {
   font: 19px "gentium";
   -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;
   letter-spacing: 1px;
+  margin-top: 0;
   padding: 9px 12px;
   text-shadow: none;
   text-transform: uppercase;
@@ -532,7 +566,7 @@ hr {
 #block-webform-client-block-18 .block-title {
   background: #181818;
   color: #fff;
-  font-family: "gill sans", "open sans", sans-serif;
+  font-family: "open sans", sans-serif;
   font-size: 13px;
   font-weight: 100;
   height: 41px;
@@ -556,4 +590,59 @@ hr {
 #block-webform-client-block-18 .form-actions  input {
   float: right;
   margin: 0;
+}
+
+/** Music: Images box **/
+#block-views-product-images-block .field-name-field-preview-images div.even {
+  float: left;
+  margin-right: 8px;
+}
+
+#block-views-product-images-block  .views-field-nothing {
+  margin: 5px 0;
+}
+
+/* Music: Price box */
+#node_product_display_full_group_add {
+  border: solid 1px #CFCFCF;
+  border-top: none;
+  position: relative;
+  padding: 50px 25px 20px 20px;
+}
+
+#node_product_display_full_group_add legend {
+  background: #181818;
+  display: block;
+  width: 220px;
+  position: absolute; top: 0; left: 0;
+  margin-left: -1px;
+}
+
+#node_product_display_full_group_add legend .fieldset-legend {
+  color: #fff;
+  display: block;
+  font-family: "open sans", sans-serif;
+  font-size: 13px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 8px 0 8px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#node_product_display_full_group_add .field-name-commerce-price {
+  text-align: center;
+}
+
+#commerce-cart-add-to-cart-form-1 {
+  text-align: center;
+}
+
+.node-product-type .field-name-field-product form.commerce-add-to-cart label {
+  margin-bottom: 5px;
+}
+
+.node-product-type .field-type-commerce-product-reference form.commerce-add-to-cart .form-item {
+  padding: 11px 0 20px 0;
 }
