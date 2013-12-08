@@ -25,6 +25,10 @@ function commerce_kickstart_lite_product_commerce_product_default_types() {
  */
 function commerce_kickstart_lite_product_ctools_plugin_api() {
   list($module, $api) = func_get_args();
+  if ($module == "boxes" && $api == "box") {
+    return array("version" => "1");
+  }
+  list($module, $api) = func_get_args();
   if ($module == "commerce_autosku" && $api == "autosku_pattern") {
     return array("version" => "1");
   }
