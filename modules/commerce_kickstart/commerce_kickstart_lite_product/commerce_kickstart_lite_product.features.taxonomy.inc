@@ -9,9 +9,9 @@
  */
 function commerce_kickstart_lite_product_taxonomy_default_vocabularies() {
   return array(
-    'product_category' => array(
-      'name' => 'Product category',
-      'machine_name' => 'product_category',
+    'category' => array(
+      'name' => 'Category',
+      'machine_name' => 'category',
       'description' => '',
       'hierarchy' => '0',
       'module' => 'taxonomy',

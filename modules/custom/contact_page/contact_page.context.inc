@@ -15,7 +15,7 @@ function contact_page_context_default_contexts() {
   $context->api_version = 3;
   $context->name = 'contact';
   $context->description = '';
-  $context->tag = '';
+  $context->tag = 'Robert shop';
   $context->conditions = array(
     'path' => array(
       'values' => array(
@@ -48,6 +48,10 @@ function contact_page_context_default_contexts() {
     ),
   );
   $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Robert shop');
   $export['contact'] = $context;
 
   return $export;

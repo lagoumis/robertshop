@@ -145,7 +145,7 @@ function commerce_kickstart_lite_product_strongarm() {
         'status' => array(
           'default' => array(
             'weight' => '6',
-            'visible' => TRUE,
+            'visible' => FALSE,
           ),
           'node_product_list' => array(
             'weight' => '4',
