@@ -99,6 +99,46 @@ body {
   text-decoration: none;
 }
 
+/** PAGER **/
+.pager {
+  background: none;
+  border: none;
+  float: right;
+  margin-bottom: 20px !important;
+}
+
+#page ul.pager li {
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: 5px;
+}
+
+#page .pager li a {
+  background: none;
+  font-size: 14px;
+  color: #777;
+}
+
+.pager li.pager-previous,
+.pager li.pager-next,
+.pager li.pager-last,
+.pager li.pager-first  {
+  display: none;
+}
+
+.pager li.pager-current {
+  background: #181818;
+  border-radius: 0; -moz-border-radius: 0; -webkit-border-radius:0;
+  color: #FFF;
+  padding: 3px 8px 4px 8px !important;
+}
+
+.pager li.pager-next a,
+.pager li.pager-last a  {
+  color: #ba1318;
+}
+
 /* LAYOUT */
 .page-node-13 .tabs,
 .page-node-14 .tabs,
