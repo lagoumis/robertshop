@@ -32,6 +32,18 @@ function home_page_context_default_contexts() {
           'region' => 'content',
           'weight' => '-10',
         ),
+        'views-blog_listing_page-block_2' => array(
+          'module' => 'views',
+          'delta' => 'blog_listing_page-block_2',
+          'region' => 'content',
+          'weight' => '-9',
+        ),
+        'views-fd259b03dfde27ef506189e23005cedc' => array(
+          'module' => 'views',
+          'delta' => 'fd259b03dfde27ef506189e23005cedc',
+          'region' => 'content',
+          'weight' => '-8',
+        ),
         'webform-client-block-18' => array(
           'module' => 'webform',
           'delta' => 'client-block-18',

@@ -181,7 +181,7 @@ function commerce_kickstart_lite_product_views_default_views() {
   $handler->display->display_options['fields']['field_description']['alter']['max_length'] = '200';
   $handler->display->display_options['fields']['field_description']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_description']['element_type'] = 'p';
-  $handler->display->display_options['fields']['field_description']['element_class'] = 'no-margin';
+  $handler->display->display_options['fields']['field_description']['element_class'] = 'margin-bottom-15';
   $handler->display->display_options['fields']['field_description']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_description']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_description']['type'] = 'text_plain';
@@ -257,6 +257,7 @@ function commerce_kickstart_lite_product_views_default_views() {
   $handler->display->display_options['fields']['field_description']['alter']['max_length'] = '200';
   $handler->display->display_options['fields']['field_description']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_description']['element_type'] = 'p';
+  $handler->display->display_options['fields']['field_description']['element_class'] = 'no-margin';
   $handler->display->display_options['fields']['field_description']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_description']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_description']['type'] = 'text_plain';
@@ -266,9 +267,75 @@ function commerce_kickstart_lite_product_views_default_views() {
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['label'] = '';
   $handler->display->display_options['fields']['view_node']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['view_node']['alter']['text'] = '<span class="form-submit">[view_node]</span>';
+  $handler->display->display_options['fields']['view_node']['alter']['text'] = '<span class="large-button">[view_node]</span>';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node']['text'] = 'View Details';
+
+  /* Display: Home box */
+  $handler = $view->new_display('block', 'Home box', 'block_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'New Music';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Field: Feature Image */
+  $handler->display->display_options['fields']['field_images']['id'] = 'field_images';
+  $handler->display->display_options['fields']['field_images']['table'] = 'field_data_field_images';
+  $handler->display->display_options['fields']['field_images']['field'] = 'field_images';
+  $handler->display->display_options['fields']['field_images']['relationship'] = 'field_product_product_id';
+  $handler->display->display_options['fields']['field_images']['label'] = '';
+  $handler->display->display_options['fields']['field_images']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_images']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_images']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_images']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_images']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_images']['settings'] = array(
+    'image_style' => 'music_home_image',
+    'image_link' => 'content',
+  );
+  $handler->display->display_options['fields']['field_images']['field_api_classes'] = TRUE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_type'] = 'h5';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Commerce Product: Written for */
+  $handler->display->display_options['fields']['field_written_for']['id'] = 'field_written_for';
+  $handler->display->display_options['fields']['field_written_for']['table'] = 'field_data_field_written_for';
+  $handler->display->display_options['fields']['field_written_for']['field'] = 'field_written_for';
+  $handler->display->display_options['fields']['field_written_for']['relationship'] = 'field_product_product_id';
+  $handler->display->display_options['fields']['field_written_for']['label'] = '';
+  $handler->display->display_options['fields']['field_written_for']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_written_for']['alter']['text'] = '<div class="subhead margin-bottom-15">Written for [field_written_for]</div>';
+  $handler->display->display_options['fields']['field_written_for']['element_label_colon'] = FALSE;
+  /* Field: Commerce Product: Description */
+  $handler->display->display_options['fields']['field_description']['id'] = 'field_description';
+  $handler->display->display_options['fields']['field_description']['table'] = 'field_data_field_description';
+  $handler->display->display_options['fields']['field_description']['field'] = 'field_description';
+  $handler->display->display_options['fields']['field_description']['relationship'] = 'field_product_product_id';
+  $handler->display->display_options['fields']['field_description']['label'] = '';
+  $handler->display->display_options['fields']['field_description']['alter']['max_length'] = '200';
+  $handler->display->display_options['fields']['field_description']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['field_description']['element_type'] = 'p';
+  $handler->display->display_options['fields']['field_description']['element_class'] = 'margin-bottom-20';
+  $handler->display->display_options['fields']['field_description']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_description']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_description']['type'] = 'text_plain';
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['element_type'] = 'span';
+  $handler->display->display_options['fields']['view_node']['element_class'] = 'more-link';
+  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['text'] = 'View Details...';
   $export['digital_music_listing_page'] = $view;
 
   $view = new view();

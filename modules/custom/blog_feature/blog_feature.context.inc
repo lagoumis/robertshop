@@ -38,12 +38,6 @@ function blog_feature_context_default_contexts() {
           'region' => 'sidebar_first',
           'weight' => '-9',
         ),
-        'views-blog_filter_terms-block' => array(
-          'module' => 'views',
-          'delta' => 'blog_filter_terms-block',
-          'region' => 'sidebar_first',
-          'weight' => '-8',
-        ),
         'views-archive-block' => array(
           'module' => 'views',
           'delta' => 'archive-block',
@@ -100,12 +94,6 @@ function blog_feature_context_default_contexts() {
           'region' => 'sidebar_first',
           'weight' => '-9',
         ),
-        'views-blog_filter_terms-block' => array(
-          'module' => 'views',
-          'delta' => 'blog_filter_terms-block',
-          'region' => 'sidebar_first',
-          'weight' => '-8',
-        ),
         'views-archive-block' => array(
           'module' => 'views',
           'delta' => 'archive-block',
@@ -152,12 +140,6 @@ function blog_feature_context_default_contexts() {
           'delta' => 'latest_blog_posts-block',
           'region' => 'sidebar_first',
           'weight' => '-9',
-        ),
-        'views-blog_filter_terms-block' => array(
-          'module' => 'views',
-          'delta' => 'blog_filter_terms-block',
-          'region' => 'sidebar_first',
-          'weight' => '-8',
         ),
         'views-archive-block' => array(
           'module' => 'views',

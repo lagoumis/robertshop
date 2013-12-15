@@ -5,6 +5,7 @@ php = 5.2.4
 dependencies[] = boxes
 dependencies[] = context
 dependencies[] = ctools
+dependencies[] = views
 dependencies[] = webform
 features[box][] = home_bio_box
 features[context][] = home

@@ -23,9 +23,9 @@ function contact_page_default_box() {
 <div class="text-area">
 <h4>Robert Sims</h4><p class="subhead">Based in Melbourne</p>
 
-<img src="/profiles/commerce_kickstart/themes/omega_kickstart/my-images/email-icon.png" width="44px" height="38px"/><p class="text">Preferred form of contact</p><p class="small-text margin-bottom-20">Fill out your details in the form to email Rob</p>
+<img src="/profiles/commerce_kickstart/themes/omega_kickstart/my-images/email-icon.png" width="44px" height="38px"/><p class="text">Preferred form of contact</p><p class="small-sans-11 margin-bottom-20">Fill out your details in the form to email Rob</p>
 
-<img src="/profiles/commerce_kickstart/themes/omega_kickstart/my-images/phone-icon.png" width="47px" height="38px"/><p class="text">Currently not available</p><p class="small-text">If you prefer to talk over the phone you can email me your number and I will call you</p>
+<img src="/profiles/commerce_kickstart/themes/omega_kickstart/my-images/phone-icon.png" width="47px" height="38px"/><p class="text">Currently not available</p><p class="small-sans-11">If you prefer to talk over the phone you can email me your number and I will call you</p>
 
 </div>',
       'format' => 'php_code',
@@ -45,9 +45,10 @@ function contact_page_default_box() {
     'body' => array(
       'value' => '<div class="small-header"><p>Friends of Rob</p></div>
 <div class="text-area">
-<h6><a href="http://www.ericklay.com/">Eric Klay</a></h6><p>Musician (trumpet player)</p><h6><a href="http://www.move.com.au/artist/anthony-pope">Anthony Pope</a></h6><p>Musician (trumpet player)</p><h6><a href="http://www.mso.com.au/">MSO</a></h6><p>Melbourne symphony orchestra</p></div>',
+<h6 class="no-margin"><a href="http://www.ericklay.com/">Eric Klay</a></h6><p class="margin-bottom-20 small-sans-11">Musician (trumpet player)</p><h6 class="no-margin"><a href="http://www.move.com.au/artist/anthony-pope">Anthony Pope</a></h6 class="no-margin"><p class="margin-bottom-20 small-sans-11">Musician (trumpet player)</p><h6 class="no-margin"><a href="http://www.mso.com.au/">MSO</a></h6><p class="margin-bottom-20 small-sans-11">Melbourne symphony orchestra</p></div>',
       'format' => 'php_code',
     ),
+    'additional_classes' => '',
   );
   $export['friends_rob'] = $box;
 

@@ -20,7 +20,7 @@ function commerce_kickstart_lite_product_default_box() {
   $box->options = array(
     'body' => array(
       'value' => '<h4>Rob\'s Music</h4>
-<p>Welcome to my music page. Take a look through all my pieces and  click on  a  work to see purchasing details.</p><p>If you have any questions please contact me via my <strong><a href="/contact">Contact form</a></strong>.</p>',
+<p>Welcome to my music page. Take a look through all my pieces and  click on  a  work to see purchasing details.</p><p>If you have any questions please contact me via my contact form below</p>',
       'format' => 'php_code',
     ),
     'additional_classes' => '',
