@@ -93,8 +93,14 @@ p strong {
   color: #5c5c5c;
 }
 
-li {
-  margin-bottom: 10px;
+.node li {
+  margin-bottom: 8px;
+  margin-left: 15px;
+}
+
+.node ul, .node ol {
+  margin: 0 0 20px 40px;
+  padding: 0;
 }
 
 a:link, 
@@ -120,13 +126,14 @@ sub {
 blockquote {
   background: url("../images/block.png") no-repeat 0 2px;
   padding-left: 55px;
-  margin: 10px 60px 10px 0;
+  margin: 10px 60px 30px 0;
 }
 
 blockquote p {
   color: #989898;
-  font-size: 15px;
+  font-size: 18px;
   font-style: italic;
+  font-family: gentium;
   letter-spacing: 1px;
   line-height: 25px;
   min-height: 37px;
@@ -134,6 +141,7 @@ blockquote p {
 
 hr {
   background: #efefef;
+  margin: 10px 0;
 }
 
 .subhead {

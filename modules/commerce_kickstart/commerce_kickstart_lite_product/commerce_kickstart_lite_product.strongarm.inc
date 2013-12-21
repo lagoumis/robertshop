@@ -152,7 +152,7 @@ function commerce_kickstart_lite_product_strongarm() {
             'visible' => FALSE,
           ),
           'add_to_cart_confirmation_view' => array(
-            'weight' => '2',
+            'weight' => '12',
             'visible' => FALSE,
           ),
         ),

@@ -26,5 +26,21 @@ function global_default_box() {
   );
   $export['copyright_box'] = $box;
 
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
+  $box->delta = 'logo';
+  $box->plugin_key = 'simple';
+  $box->title = '';
+  $box->description = 'Logo box';
+  $box->options = array(
+    'body' => array(
+      'value' => '<img src="/profiles/commerce_kickstart/themes/omega_kickstart/my-images/dad-logo.png" width="408px" height="50px" />',
+      'format' => 'php_code',
+    ),
+    'additional_classes' => '',
+  );
+  $export['logo'] = $box;
+
   return $export;
 }

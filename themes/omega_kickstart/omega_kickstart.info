@@ -58,6 +58,10 @@ css[custom-mobile.css][name] = 'Your custom mobile styles'
 css[custom-mobile.css][description] = 'Amanda's mobile themes'
 css[custom-mobile.css][options][weight] = '11'
 
+css[wysiwyg.css][name] = 'Your custom body text styles'
+css[wysiwyg.css][description] = 'styles for body text'
+css[wysiwyg.css][options][weight] = '11'
+
 settings[alpha_grid] = 'alpha_default'
 settings[alpha_primary_alpha_default] = 'normal'
 settings[alpha_responsive] = '1'
