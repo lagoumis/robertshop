@@ -26,6 +26,10 @@
   margin: 0;
 }
 
+#powered_by_drupal_commerce {
+  display: none;
+}
+
 /** Add to cart confirmation overlay */
 div.messages.commerce-add-to-cart-confirmation {
   top: -276px;

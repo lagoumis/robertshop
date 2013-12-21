@@ -160,7 +160,7 @@ function blog_feature_field_default_fields() {
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
         'max_resolution' => '',
-        'min_resolution' => '',
+        'min_resolution' => '300x245',
         'title_field' => 0,
         'user_register_form' => FALSE,
       ),

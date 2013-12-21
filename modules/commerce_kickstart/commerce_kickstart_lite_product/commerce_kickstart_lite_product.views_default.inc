@@ -158,7 +158,7 @@ function commerce_kickstart_lite_product_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_type'] = 'h3';
+  $handler->display->display_options['fields']['title']['element_type'] = 'h4';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   /* Field: Commerce Product: Written for */
   $handler->display->display_options['fields']['field_written_for']['id'] = 'field_written_for';
@@ -168,6 +168,7 @@ function commerce_kickstart_lite_product_views_default_views() {
   $handler->display->display_options['fields']['field_written_for']['label'] = '';
   $handler->display->display_options['fields']['field_written_for']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_written_for']['alter']['text'] = '<div class="subhead">Written for [field_written_for]</div>';
+  $handler->display->display_options['fields']['field_written_for']['element_class'] = 'margin-bottom-15';
   $handler->display->display_options['fields']['field_written_for']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_written_for']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['field_written_for']['element_default_classes'] = FALSE;
@@ -244,6 +245,7 @@ function commerce_kickstart_lite_product_views_default_views() {
   $handler->display->display_options['fields']['field_written_for']['label'] = '';
   $handler->display->display_options['fields']['field_written_for']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_written_for']['alter']['text'] = '<div class="subhead">Written for [field_written_for]</div>';
+  $handler->display->display_options['fields']['field_written_for']['element_class'] = 'margin-bottom-15';
   $handler->display->display_options['fields']['field_written_for']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_written_for']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['field_written_for']['element_default_classes'] = FALSE;
