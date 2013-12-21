@@ -153,3 +153,24 @@ hr {
   line-height: 25px;
   margin-top: -5px;
 }
+
+.float-right {
+  float: right;
+  padding: 0px 0 5px 15px;
+}
+
+.float-left {
+  float: left;
+  clear: left;
+  padding: 0 15px 5px 0px;
+}
+
+.center-image .media-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.media-youtube-video {
+  margin-bottom: 30px;
+  padding-top: 10px;
+}

@@ -14,8 +14,7 @@ function commerce_kickstart_user_user_default_permissions() {
   $permissions['create commerce_customer_profile entities'] = array(
     'name' => 'create commerce_customer_profile entities',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'authenticated user',
+      0 => 'authenticated user',
     ),
     'module' => 'commerce_customer',
   );
@@ -24,8 +23,7 @@ function commerce_kickstart_user_user_default_permissions() {
   $permissions['create commerce_customer_profile entities of bundle billing'] = array(
     'name' => 'create commerce_customer_profile entities of bundle billing',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'authenticated user',
+      0 => 'authenticated user',
     ),
     'module' => 'commerce_customer',
   );
@@ -34,8 +32,7 @@ function commerce_kickstart_user_user_default_permissions() {
   $permissions['create commerce_customer_profile entities of bundle shipping'] = array(
     'name' => 'create commerce_customer_profile entities of bundle shipping',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'authenticated user',
+      0 => 'authenticated user',
     ),
     'module' => 'commerce_customer',
   );
@@ -44,8 +41,7 @@ function commerce_kickstart_user_user_default_permissions() {
   $permissions['edit own commerce_customer_profile entities'] = array(
     'name' => 'edit own commerce_customer_profile entities',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'authenticated user',
+      0 => 'authenticated user',
     ),
     'module' => 'commerce_customer',
   );
@@ -54,8 +50,7 @@ function commerce_kickstart_user_user_default_permissions() {
   $permissions['edit own commerce_customer_profile entities of bundle billing'] = array(
     'name' => 'edit own commerce_customer_profile entities of bundle billing',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'authenticated user',
+      0 => 'authenticated user',
     ),
     'module' => 'commerce_customer',
   );
@@ -64,8 +59,7 @@ function commerce_kickstart_user_user_default_permissions() {
   $permissions['edit own commerce_customer_profile entities of bundle shipping'] = array(
     'name' => 'edit own commerce_customer_profile entities of bundle shipping',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'authenticated user',
+      0 => 'authenticated user',
     ),
     'module' => 'commerce_customer',
   );
@@ -74,8 +68,7 @@ function commerce_kickstart_user_user_default_permissions() {
   $permissions['view own commerce_customer_profile entities'] = array(
     'name' => 'view own commerce_customer_profile entities',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'authenticated user',
+      0 => 'authenticated user',
     ),
     'module' => 'commerce_customer',
   );
@@ -84,8 +77,7 @@ function commerce_kickstart_user_user_default_permissions() {
   $permissions['view own commerce_customer_profile entities of bundle billing'] = array(
     'name' => 'view own commerce_customer_profile entities of bundle billing',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'authenticated user',
+      0 => 'authenticated user',
     ),
     'module' => 'commerce_customer',
   );
@@ -94,8 +86,7 @@ function commerce_kickstart_user_user_default_permissions() {
   $permissions['view own commerce_customer_profile entities of bundle shipping'] = array(
     'name' => 'view own commerce_customer_profile entities of bundle shipping',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'authenticated user',
+      0 => 'authenticated user',
     ),
     'module' => 'commerce_customer',
   );

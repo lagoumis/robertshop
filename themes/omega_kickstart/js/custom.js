@@ -71,5 +71,11 @@ if($('#edit-submitted-message').val() == ""){
                this.value = "Message:";
           }
      });
-
+     
+/** Replace text - Checkout - add to cart **/
+ $('#block-views-shopping-cart-block .line-item-summary-checkout a').text("View cart");
+ 
+/** Replace text - Go to checkout - checkout **/
+ $('.commerce-add-to-cart-confirmation .button-wrapper .checkout a').text("Checkout");
+ 
 });

@@ -244,12 +244,21 @@ div.messages.commerce-add-to-cart-confirmation .button.continue .commerce-add-to
 }
 
 /** TOOLBAR **/
-#toolbar div.toolbar-menu ul li a {
+#toolbar div.toolbar-menu ul li a,
+#toolbar .toolbar-shortcuts a {
   font-family: "open sans";
 }
 
 #toolbar .account a strong {
   color: #64b100;
+}
+
+#region-page-top #toolbar .toolbar-shortcuts a {
+  background-image: url(../my-images/plus-icon-small.png);
+  background-repeat: no-repeat;
+  background-position: 10px 7px;
+  padding-left: 30px;
+  padding-right: 13px;
 }
 
 /* MAIN MENU */
@@ -428,7 +437,6 @@ div.messages.commerce-add-to-cart-confirmation .button.continue .commerce-add-to
   font-size: 20px;
   font-family: gentium;
   font-weight: 600;
-  margin-top: 8px;
   margin-bottom: 15px;
   line-height: 22px;
 }
@@ -441,6 +449,7 @@ div.messages.commerce-add-to-cart-confirmation .button.continue .commerce-add-to
 
 #page div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-message-product-display .view-content {
   margin-bottom: 0;
+  padding-top: 13px;
   width: 201px;
 }
 
@@ -461,7 +470,7 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
 #block-boxes-logo {
   float: left;
   margin-left: -13px;
-  padding: 30px 0 13px 0;
+  padding: 40px 0 13px 0;
 }
 
 #block-boxes-logo .boxes-box-controls {
@@ -1067,7 +1076,7 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
   padding-left: 17px;
 }
 
-#block-views-blog-listing-page-block-1 .field-type-image img {
+#block-views-blog-listing-page-block-1 .views-field-field-images img {
   float: left;
   padding-right: 25px;
 }
