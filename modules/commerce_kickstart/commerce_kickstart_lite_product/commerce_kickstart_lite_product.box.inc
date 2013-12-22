@@ -13,6 +13,21 @@ function commerce_kickstart_lite_product_default_box() {
   $box = new stdClass();
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
   $box->api_version = 1;
+  $box->delta = 'music_cart';
+  $box->plugin_key = 'simple';
+  $box->title = '';
+  $box->description = 'Music cart information';
+  $box->options = array(
+    'body' => array(
+      'value' => '<h2>Music Cart</h2><p>To change a product quantity simply enter the desired amount into the input area and click the “update cart” button. When you are ready to purchase, click “checkout”.</p>',
+      'format' => 'full_html',
+    ),
+  );
+  $export['music_cart'] = $box;
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
   $box->delta = 'robs_music';
   $box->plugin_key = 'simple';
   $box->title = '';

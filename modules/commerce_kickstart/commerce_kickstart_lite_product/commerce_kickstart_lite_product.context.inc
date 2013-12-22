@@ -13,6 +13,38 @@ function commerce_kickstart_lite_product_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'cart';
+  $context->description = '';
+  $context->tag = 'Robert shop';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'cart' => 'cart',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'boxes-music_cart' => array(
+          'module' => 'boxes',
+          'delta' => 'music_cart',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Robert shop');
+  $export['cart'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'digital_sheet_music';
   $context->description = '';
   $context->tag = 'Robert shop';

@@ -131,6 +131,10 @@ function commerce_kickstart_lite_product_strongarm() {
             'weight' => '1',
             'visible' => TRUE,
           ),
+          'product_in_cart' => array(
+            'weight' => '1',
+            'visible' => FALSE,
+          ),
         ),
         'title' => array(
           'default' => array(
@@ -153,6 +157,10 @@ function commerce_kickstart_lite_product_strongarm() {
           ),
           'add_to_cart_confirmation_view' => array(
             'weight' => '12',
+            'visible' => FALSE,
+          ),
+          'product_in_cart' => array(
+            'weight' => '3',
             'visible' => FALSE,
           ),
         ),
