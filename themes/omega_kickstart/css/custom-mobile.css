@@ -51,10 +51,6 @@ div.messages.commerce-add-to-cart-confirmation {
   background: #fff;
 }
 
-#zone-content {
-  min-height: 500px;
-}
-
 body {
   background: #262626;
 }  
@@ -248,7 +244,12 @@ input[type="email"] {
 #page div.messages.commerce-add-to-cart-confirmation .button a,
 div.messages.commerce-add-to-cart-confirmation .button.continue .commerce-add-to-cart-confirmation-close, 
 #page #views-form-commerce-cart-form-default .commerce-line-item-actions #edit-submit,
-#page #views-form-commerce-cart-form-default .commerce-line-item-actions #edit-checkout {
+#page #views-form-commerce-cart-form-default .commerce-line-item-actions #edit-checkout,
+#page a.login-register,
+#user_login_form .form-submit,
+#user_pass_form .form-submit,
+.page-user  #page #zone-content .back-to-login .login-account,
+.page-user  #page #zone-content #user-register-form .form-submit {
   color: #fff;
   font-weight: 400;
   font-family: "open sans";
@@ -259,8 +260,45 @@ div.messages.commerce-add-to-cart-confirmation .button.continue .commerce-add-to
 
 #block-views-shopping-cart-block .view-id-shopping_cart .line-item-summary  .line-item-summary-checkout a:hover,
 #page #views-form-commerce-cart-form-default .commerce-line-item-actions #edit-submit:hover,
-#page #views-form-commerce-cart-form-default .commerce-line-item-actions #edit-checkout:hover {
+#page #views-form-commerce-cart-form-default .commerce-line-item-actions #edit-checkout:hover,
+#user_pass_form .form-submit:hover {
   text-decoration: none;
+}
+
+/*Button black*/
+#page #views-form-commerce-cart-form-default .commerce-line-item-actions #edit-checkout,
+.page-checkout #page .checkout-buttons #edit-continue,
+#page #user_login_form .form-submit,
+#page #user_pass_form .form-submit,
+.page-user  #page #zone-content #user-register-form .form-submit  {
+  background: #181818;
+  border: none;
+  border-radius: 0; -moz-border-radius: 0px; -webkit-border-radius:0; 
+  padding: 10px 20px;
+}
+
+#page #views-form-commerce-cart-form-default .commerce-line-item-actions #edit-checkout:hover,
+.page-checkout #page .checkout-buttons #edit-continue:hover,
+#page #user_login_form .form-submit:hover,
+#page #user_pass_form .form-submit:hover,
+.page-user  #page #zone-content #user-register-form .form-submit:hover {
+  background: #333333;
+}
+
+/*Button red*/
+#page #views-form-commerce-cart-form-default .commerce-line-item-actions #edit-submit,
+#page a.login-register,
+.page-user  #page #zone-content .back-to-login .login-account {
+  background: #9C0000;
+  border: none;
+  border-radius: 0; -moz-border-radius: 0px; -webkit-border-radius:0; 
+  padding: 10px 20px;
+}
+
+#page #views-form-commerce-cart-form-default .commerce-line-item-actions #edit-submit:hover,
+#page a.login-register:hover,
+.page-user  #page #zone-content .back-to-login .login-account:hover {
+  background: #B70000;
 }
 
 /** TOOLBAR **/
@@ -526,6 +564,10 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
   float: right;
 }
 
+#block-boxes-copyright-box .boxes-box-controls {
+  display: none;
+}
+
 /*GDAY BOX*/
 #block-block-2 {
   position: absolute;
@@ -756,22 +798,14 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
 /** Home: bio box **/
 #block-boxes-home-bio-box {
   border: solid 1px #cccccc;
-  height: 115px;
+  height: 104px;
   margin-bottom: 10px;
-}
-
-#block-boxes-home-bio-box h5 {
-  font-size: 27px;
-}
-
-#block-boxes-home-bio-box img {
-  float: left;
+  padding-left: 30px;
 }
 
 #block-boxes-home-bio-box .bio-info {
   display: inline-block;
   margin-top: 27px;
-  margin-left: -10px;
 }
 
 #block-boxes-home-bio-box .bio-info p {
@@ -780,8 +814,8 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
 
 #page #block-boxes-home-bio-box a {
   float: right;
-  margin-top: 63px;
-  margin-right: 14px;
+  margin-top: 31px;
+  margin-right: 24px;
   text-decoration: none;
 }
 
@@ -1105,31 +1139,12 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
 }
 
 /**CART**/
-#page #views-form-commerce-cart-form-default .commerce-line-item-actions #edit-submit,
-#page #views-form-commerce-cart-form-default .commerce-line-item-actions #edit-checkout,
-.page-checkout #page .checkout-buttons #edit-continue {
-  background: #181818;
-  border: none;
-  border-radius: 0; -moz-border-radius: 0px; -webkit-border-radius:0; 
-  padding: 10px 20px;
-}
-
 #page #views-form-commerce-cart-form-default .commerce-line-item-actions #edit-submit {
-  background: #9C0000;
   margin-right: 5px;
 }
 
 #page #views-form-commerce-cart-form-default .commerce-line-item-actions #edit-checkout {
   margin-right: 0;
-}
-
-#page #views-form-commerce-cart-form-default .commerce-line-item-actions #edit-submit:hover {
-  background: #B70000;
-}
-
-#page #views-form-commerce-cart-form-default .commerce-line-item-actions #edit-checkout:hover,
-.page-checkout #page .checkout-buttons #edit-continue:hover {
-  background: #333333;
 }
 
 #page #views-form-commerce-cart-form-default .views-field-edit-delete .delete-line-item,
@@ -1314,7 +1329,7 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
   margin-bottom: 20px;
 }
 
-#commerce-checkout-form-checkout #edit-buttons .fieldset-wrapper {
+.page-checkout #page #zone-content #edit-buttons .fieldset-wrapper {
   margin-left: 0;
 }
 
@@ -1327,7 +1342,7 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
 
 /* CHECKOUT REVIEW PAGE*/
 .page-checkout #page #zone-content .pane-data-full  {
-  padding: 20px 0 30px 10px;
+  padding: 20px 10px 30px 10px;
 }
 
 .page-checkout #page #zone-content .commerce_payment .fieldset-wrapper {
@@ -1368,4 +1383,90 @@ ul.inline.commerce-checkout-progress li.last.active:after,
 ol.inline.commerce-checkout-progress li.active:after, 
 ol.inline.commerce-checkout-progress li.last.active:after {
   background: url(../my-images/active-progress.png) no-repeat 0 0;
+}
+
+/** Login page **/
+.page-user #page #user-login #user_login_form {
+  border-right-color: #f1f1f1;
+}
+
+.page-user #page #zone-content #user_login_form {
+  padding: 0 70px 0 50px;
+  max-width: 345px;
+}
+
+#page #user_login_form h1,
+#page .create-account h2,
+#page #user_pass_form h1,
+#page #user_register_form h1 {
+  font-family: gentium;
+  font-size: 35px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+#page a.login-register,
+#user_login_form .form-submit,
+#page #user_pass_form .form-submit,
+.page-user  #page #zone-content .back-to-login .login-account,
+.page-user  #page #zone-content #user-register-form .form-submit  {
+  font-size: 14px;
+  margin: 0;
+}
+
+.page-user #zone-content {
+  padding-bottom: 40px;
+  padding-top: 30px;
+}
+
+#page #zone-content #user-login a.login-password {
+  color: #C40000;
+  display: block;
+  font-family: "open sans";
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#page .form-type-password {
+  margin-bottom: 20px;
+}
+
+.page-user #page form#user-login .create-account {
+  padding: 0 50px 0 70px;
+  width: 334px;
+}
+
+.page-user  #page #zone-content .back-to-login .login-account {
+  padding: 9px 20px;
+}
+
+#user_login_form input,
+#user_pass_form input,
+#user_register_form input {
+  padding: 15px 10px;
+}
+
+#user_pass_form .form-item-name {
+  margin-bottom: 20px;
+}
+
+.page-user  #page #zone-content .back-to-login {
+  float: left;
+  margin: 0 0 0 5px;
+  padding:0;
+}
+
+#user_pass_form,
+.page-user #user-register-form #edit-actions {
+  padding-left: 10px;
+}
+
+#user_register_form {
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+
+#user_register_form .form-item-name,
+#user_register_form .form-item-mail {
+  margin-bottom: 20px;
 }
