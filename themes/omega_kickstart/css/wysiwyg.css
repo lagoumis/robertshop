@@ -80,12 +80,17 @@ h6 a:hover {
   text-decoration: underline;
 }
 
+label {
+  font-family: "open sans";
+  font-weight: 700;
+}
+
 p, 
 li {
   color: #616161;
-  font-family: gentium;
+  font-family: "open sans";
   font-weight: normal;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 22px;
 }
 

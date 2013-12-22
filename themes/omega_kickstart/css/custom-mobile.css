@@ -1106,7 +1106,8 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
 
 /**CART**/
 #page #views-form-commerce-cart-form-default .commerce-line-item-actions #edit-submit,
-#page #views-form-commerce-cart-form-default .commerce-line-item-actions #edit-checkout {
+#page #views-form-commerce-cart-form-default .commerce-line-item-actions #edit-checkout,
+.page-checkout #page .checkout-buttons #edit-continue {
   background: #181818;
   border: none;
   border-radius: 0; -moz-border-radius: 0px; -webkit-border-radius:0; 
@@ -1126,15 +1127,14 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
   background: #B70000;
 }
 
-#page #views-form-commerce-cart-form-default .commerce-line-item-actions #edit-checkout:hover {
+#page #views-form-commerce-cart-form-default .commerce-line-item-actions #edit-checkout:hover,
+.page-checkout #page .checkout-buttons #edit-continue:hover {
   background: #333333;
 }
 
-#views-form-commerce-cart-form-default table .views-field-nothing a {
-  font-size: 12px;
-}
-
-#page #views-form-commerce-cart-form-default .views-field-edit-delete .delete-line-item {
+#page #views-form-commerce-cart-form-default .views-field-edit-delete .delete-line-item,
+.page-checkout #page #zone-content .checkout-cancel,
+.page-checkout #page #edit-buttons .checkout-back  {
   border: none;
   color: #C40000;
   font-size: 13px;
@@ -1145,52 +1145,88 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
 #page #views-form-commerce-cart-form-default table .views-field-commerce-total,
 #page #views-form-commerce-cart-form-default table .component-title,
 #page #views-form-commerce-cart-form-default table .component-total,
-#page #views-form-commerce-cart-form-default table .views-field-commerce-unit-price {
+#page #views-form-commerce-cart-form-default table .views-field-commerce-unit-price,
+.page-checkout #page #zone-content .views-field-edit-delete .delete-line-item,
+.page-checkout #page #zone-content table .views-field-commerce-total,
+.page-checkout #page #zone-content table .component-title,
+.page-checkout #page #zone-content table .component-total,
+.page-checkout #page #zone-content table .views-field-commerce-unit-price,
+.page-checkout #page #zone-content table .views-field-quantity,
+.page-checkout #page #zone-content .checkout-cancel,
+.page-checkout #page #edit-buttons .checkout-back {
   font-family: "open sans", sans-serif;
   font-weight: 600;
   letter-spacing: 0px;
 }
 
-#page #views-form-commerce-cart-form-default .views-field-edit-delete .delete-line-item:hover {
+#page #views-form-commerce-cart-form-default .views-field-edit-delete .delete-line-item:hover,
+#page #commerce-checkout-form-checkout .checkout-cancel:hover,
+.page-checkout #page #edit-buttons .checkout-back:hover  {
   color: #a0a0a0;
   text-decoration: none;
 }
 
 #page #views-form-commerce-cart-form-default table .component-title,
-#page #views-form-commerce-cart-form-default table .component-total {
+#page #views-form-commerce-cart-form-default table .component-total,
+.page-checkout #page #zone-content .component-title,
+.page-checkout #page #zone-content table .component-total {
   border: none;
   font-size: 18px;
 }
 
-#page #views-form-commerce-cart-form-default .commerce-price-formatted-components {
+#page #views-form-commerce-cart-form-default table .component-type-base-price .component-title,
+#page #views-form-commerce-cart-form-default table .component-type-base-price .component-total,
+#page #views-form-commerce-cart-form-default table .component-type-flat-rate-free-shipping .component-title,
+#page #views-form-commerce-cart-form-default table .component-type-flat-rate-free-shipping .component-total,
+.page-checkout #page #zone-content .component-type-base-price .component-title,
+.page-checkout #page #zone-content .component-type-base-price .component-total,
+.page-checkout #page #zone-content .component-type-flat-rate-free-shipping .component-title,
+.page-checkout #page #zone-content .component-type-flat-rate-free-shipping .component-total {
+  font-size: 14px;
+}
+
+#page #views-form-commerce-cart-form-default .commerce-price-formatted-components,
+.page-checkout #page #zone-content .commerce-price-formatted-components {
   margin-bottom: 0px;
 }
 
-#page #views-form-commerce-cart-form-default .views-field-nothing h6 {
+#page #views-form-commerce-cart-form-default .views-field-nothing h6,
+.page-checkout #page #zone-content .views-field-line-item-title h6 {
   font-size: 19px;
 }
 
 #page #views-form-commerce-cart-form-default .views-field-nothing,
-#page #views-form-commerce-cart-form-default thead tr th.views-field-nothing {
+#page #views-form-commerce-cart-form-default thead tr th.views-field-nothing,
+.page-checkout #page #zone-content .views-field-line-item-title,
+.page-checkout #page #zone-content thead tr th.views-field-line-item-title {
   padding-left: 20px;
 }
 
 #page #views-form-commerce-cart-form-default .views-field-commerce-total,
-#page #views-form-commerce-cart-form-default thead tr th.views-field-commerce-total {
+#page #views-form-commerce-cart-form-default thead tr th.views-field-commerce-total,
+.page-checkout #page #zone-content .views-field-commerce-total,
+.page-checkout #page #zone-content thead tr th.views-field-commerce-total {
   padding-right: 20px;
 }
 
-#page #views-form-commerce-cart-form-default table td {
+#page #views-form-commerce-cart-form-default table td,
+.page-checkout #page #zone-content table td,
+.page-checkout #page #zone-content legend {
   border-bottom-color: #f1f1f1;
 }
 
-#views-form-commerce-cart-form-default thead tr {
+.page-cart #page thead tr,
+.page-checkout #page #zone-content thead tr {
   background: #181818;
 }
 
 #page #views-form-commerce-cart-form-default thead tr th,
 #page #views-form-commerce-cart-form-default thead tr th.views-field-commerce-unit-price,
-#page #views-form-commerce-cart-form-default thead tr th.views-field-commerce-total {
+#page #views-form-commerce-cart-form-default thead tr th.views-field-commerce-total,
+.page-checkout #page #zone-content tr th,
+.page-checkout #page #zone-content thead tr th.views-field-commerce-unit-price,
+.page-checkout #page #zone-content thead tr th.views-field-commerce-total,
+.page-checkout #page #zone-content thead tr th.views-field-quantity {
   color: #fff;
   font-family: "open sans", sans-serif;
   font-weight: 400;
@@ -1203,18 +1239,133 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
   padding-right: 10px;
 }
 
-#page #views-form-commerce-cart-form-default .views-field-edit-quantity {
+#page #views-form-commerce-cart-form-default .views-field-edit-quantity,
+.page-checkout #page #zone-content .views-field-quantity {
   width: 76px;
 }
 
-#page #views-form-commerce-cart-form-default .views-field-commerce-unit-price {
+.page-checkout #page #zone-content .views-field-commerce-unit-price {
   width: 120px;
 }
 
-#page #views-form-commerce-cart-form-default .views-field-edit-delete {
+.page-checkout #page #zone-content .views-field-commerce-unit-price {
+  width: 160px;
+}
+
+.page-checkout #page #zone-content .views-field-edit-delete {
   width: 90px;
 }
 
-#page #views-form-commerce-cart-form-default .views-field-commerce-total {
+#page #views-form-commerce-cart-form-default .views-field-commerce-total,
+.page-checkout #page #zone-content .views-field-commerce-total {
   width: 145px;
+}
+
+.cart-empty-page {
+  background: #F4F4F4;
+  color: #737373;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+/* Music cart information box */
+#block-boxes-music-cart {
+  padding: 10px 5px;
+}
+
+/* CHECKOUT SCREENS */
+.page-checkout #page #zone-content {
+  padding-bottom: 30px;
+}
+
+#page #commerce-checkout-form-checkout legend .fieldset-legend,
+.page-checkout #page #zone-content legend .fieldset-legend,
+.page-checkout #page #zone-content .pane-title td {
+  font-family: "open sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+/* Billing and shipping information*/
+.customer_profile_billing .fieldset-wrapper,
+.customer_profile_shipping  .fieldset-wrapper {
+  padding: 20px 0 40px 0;
+  
+}
+
+.customer_profile_billing .form-item-customer-profile-billing-addressbook,
+.customer_profile_shipping .form-item-customer-profile-shipping-addressbook {
+  margin-bottom: 30px;
+}
+
+.customer_profile_billing .addressfield-container-inline,
+.customer_profile_billing .form-item-customer-profile-billing-commerce-customer-address-und-0-country,
+.customer_profile_billing .street-block .form-item-customer-profile-billing-commerce-customer-address-und-0-thoroughfare,
+.customer_profile_shipping  .form-item-customer-profile-shipping-commerce-customer-address-und-0-name-line,
+.customer_profile_shipping  .form-item-customer-profile-shipping-commerce-customer-address-und-0-country,
+.customer_profile_shipping  .form-item-customer-profile-shipping-commerce-customer-address-und-0-thoroughfare {
+  margin-bottom: 5px;
+}
+
+.customer_profile_billing .street-block .form-item-customer-profile-billing-commerce-customer-address-und-0-premise,
+.customer_profile_shipping  .form-item-customer-profile-shipping-commerce-customer-profile-copy,
+.customer_profile_shipping  .form-item-customer-profile-shipping-commerce-customer-address-und-0-premise {
+  margin-bottom: 20px;
+}
+
+#commerce-checkout-form-checkout #edit-buttons .fieldset-wrapper {
+  margin-left: 0;
+}
+
+#commerce-checkout-form-shipping legend {
+  border-bottom: 1px solid #D7D7D7;
+  margin: 0 10px 10px 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+/* CHECKOUT REVIEW PAGE*/
+.page-checkout #page #zone-content .pane-data-full  {
+  padding: 20px 0 30px 10px;
+}
+
+.page-checkout #page #zone-content .commerce_payment .fieldset-wrapper {
+  padding: 10px 0 30px 0px;
+}
+
+.page-checkout #page #zone-content .pane-data .form-type-item {
+  margin-bottom: 10px;
+}
+
+.page-checkout  .checkout-help {
+  color: #616161;
+  font-family: "open sans";
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+/* Checkout indicator */
+#block-commerce-checkout-progress-indication {
+  padding-bottom: 20px;
+} 
+
+#block-commerce-checkout-progress-indication .commerce-checkout-progress li {
+  color: #b5b5b5;
+  font-family: "open sans";
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+#block-commerce-checkout-progress-indication .commerce-checkout-progress li.active {
+  background: #77b622;
+  color: #fff;
+}
+
+ul.inline.commerce-checkout-progress li.active:after, 
+ul.inline.commerce-checkout-progress li.last.active:after, 
+ol.inline.commerce-checkout-progress li.active:after, 
+ol.inline.commerce-checkout-progress li.last.active:after {
+  background: url(../my-images/active-progress.png) no-repeat 0 0;
 }
