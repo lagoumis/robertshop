@@ -42,5 +42,20 @@ function global_default_box() {
   );
   $export['logo'] = $box;
 
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
+  $box->delta = 'my_account';
+  $box->plugin_key = 'simple';
+  $box->title = '';
+  $box->description = 'My account header link';
+  $box->options = array(
+    'body' => array(
+      'value' => '<a href="/user">My Account</a>',
+      'format' => 'php_code',
+    ),
+  );
+  $export['my_account'] = $box;
+
   return $export;
 }

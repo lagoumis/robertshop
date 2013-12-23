@@ -30,19 +30,25 @@ function global_context_default_contexts() {
           'module' => 'menu',
           'delta' => 'menu-login-and-logout',
           'region' => 'branding',
-          'weight' => '-34',
+          'weight' => '-10',
         ),
         'views-shopping_cart-block' => array(
           'module' => 'views',
           'delta' => 'shopping_cart-block',
           'region' => 'branding',
-          'weight' => '-33',
+          'weight' => '-9',
+        ),
+        'boxes-my_account' => array(
+          'module' => 'boxes',
+          'delta' => 'my_account',
+          'region' => 'branding',
+          'weight' => '-8',
         ),
         'boxes-logo' => array(
           'module' => 'boxes',
           'delta' => 'logo',
           'region' => 'branding',
-          'weight' => '-32',
+          'weight' => '-7',
         ),
         'block-1' => array(
           'module' => 'block',
