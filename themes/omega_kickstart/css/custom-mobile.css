@@ -148,7 +148,7 @@ input[type="email"] {
 
 #page .form-submit:hover,
 #page .large-button:hover {
-  background: #9C0000;
+  background: #333333;
   color: #fff;
   border: none;
 }
@@ -631,6 +631,7 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
   border-bottom: solid 1px #E7E7E7;
   margin-bottom: 22px;
   padding-bottom: 30px;
+  padding-right: 20px;
 }
 
 #block-views-711324f228ef203ef2b5b2cdfb9a6bcb .views-row-last,
@@ -964,6 +965,16 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
 .node-product-display .field-name-field-audio-samples .file img {
   display: none;
 }
+
+/** Music: listing**/
+#block-views-711324f228ef203ef2b5b2cdfb9a6bcb .views-field-field-images {
+  float: left;
+}
+
+#block-views-711324f228ef203ef2b5b2cdfb9a6bcb .views-field-field-images img {
+  padding-right: 25px;
+}
+
 
 /* Music:  Node */
 .node-product-display .commerce-product-field-field-written-for {
