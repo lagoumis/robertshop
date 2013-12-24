@@ -10,6 +10,280 @@
 function commerce_kickstart_lite_product_field_default_fields() {
   $fields = array();
 
+  // Exported field: 'commerce_product-product-commerce_file'.
+  $fields['commerce_product-product-commerce_file'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(
+        0 => 'commerce_product',
+      ),
+      'field_name' => 'commerce_file',
+      'foreign keys' => array(
+        'fid' => array(
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+          'table' => 'file_managed',
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'file',
+      'settings' => array(
+        'display_default' => 0,
+        'display_field' => 0,
+        'uri_scheme' => 'private',
+      ),
+      'translatable' => '0',
+      'type' => 'file',
+    ),
+    'field_instance' => array(
+      'bundle' => 'product',
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'add_to_cart_confirmation_view' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'default' => array(
+          'label' => 'above',
+          'module' => 'commerce_file',
+          'settings' => array(
+            'check_access' => TRUE,
+            'show_icon' => TRUE,
+          ),
+          'type' => 'commerce_file',
+          'weight' => 19,
+        ),
+        'line_item' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '8',
+        ),
+        'node_product_list' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'node_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '8',
+        ),
+        'product_in_cart' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'ds_extras_field_template' => '',
+      'entity_type' => 'commerce_product',
+      'fences_wrapper' => '',
+      'field_name' => 'commerce_file',
+      'label' => 'Files',
+      'required' => 1,
+      'settings' => array(
+        'description_field' => 1,
+        'file_directory' => 'sites/files/private',
+        'file_extensions' => 'pdf',
+        'max_filesize' => '',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'file',
+        'settings' => array(
+          'progress_indicator' => 'throbber',
+        ),
+        'type' => 'file_generic',
+        'weight' => '13',
+      ),
+    ),
+  );
+
+  // Exported field: 'commerce_product-product-commerce_license_duration'.
+  $fields['commerce_product-product-commerce_license_duration'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'commerce_license_duration',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '1',
+      'module' => 'number',
+      'settings' => array(),
+      'translatable' => '0',
+      'type' => 'number_integer',
+    ),
+    'field_instance' => array(
+      'bundle' => 'product',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'add_to_cart_confirmation_view' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'scale' => 0,
+            'thousand_separator' => ' ',
+          ),
+          'type' => 'number_integer',
+          'weight' => 18,
+        ),
+        'line_item' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '9',
+        ),
+        'node_product_list' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'node_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '9',
+        ),
+        'product_in_cart' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'commerce_product',
+      'field_name' => 'commerce_license_duration',
+      'label' => 'License duration',
+      'required' => TRUE,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'module' => 'commerce_license',
+        'settings' => array(),
+        'type' => 'commerce_license_duration',
+        'weight' => '16',
+      ),
+    ),
+  );
+
+  // Exported field: 'commerce_product-product-commerce_license_type'.
+  $fields['commerce_product-product-commerce_license_type'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'commerce_license_type',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'locked' => '1',
+      'module' => 'list',
+      'settings' => array(
+        'allowed_values' => array(),
+        'allowed_values_function' => 'commerce_license_types_allowed_values',
+      ),
+      'translatable' => '0',
+      'type' => 'list_text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'product',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'add_to_cart_confirmation_view' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'default' => array(
+          'label' => 'above',
+          'module' => 'list',
+          'settings' => array(),
+          'type' => 'list_default',
+          'weight' => 17,
+        ),
+        'line_item' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '7',
+        ),
+        'node_product_list' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'node_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '7',
+        ),
+        'product_in_cart' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'commerce_product',
+      'field_name' => 'commerce_license_type',
+      'label' => 'License type',
+      'required' => TRUE,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'module' => 'options',
+        'settings' => array(
+          'apply_chosen' => 0,
+        ),
+        'type' => 'options_select',
+        'weight' => '15',
+      ),
+    ),
+  );
+
   // Exported field: 'commerce_product-product-commerce_price'.
   $fields['commerce_product-product-commerce_price'] = array(
     'field_config' => array(
@@ -79,7 +353,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
             'calculation' => 'calculated_sell_price',
           ),
           'type' => 'commerce_price_formatted_amount',
-          'weight' => 0,
+          'weight' => '2',
         ),
         'node_product_list' => array(
           'label' => 'hidden',
@@ -102,7 +376,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
             'calculation' => 'calculated_sell_price',
           ),
           'type' => 'commerce_price_formatted_amount',
-          'weight' => 0,
+          'weight' => '2',
         ),
         'product_in_cart' => array(
           'label' => 'hidden',
@@ -191,7 +465,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '6',
         ),
         'node_product_list' => array(
           'label' => 'above',
@@ -203,7 +477,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '6',
         ),
         'product_in_cart' => array(
           'label' => 'above',
@@ -295,7 +569,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '4',
         ),
         'node_product_list' => array(
           'label' => 'above',
@@ -307,7 +581,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '4',
         ),
         'product_in_cart' => array(
           'label' => 'above',
@@ -393,7 +667,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '14',
         ),
         'node_product_list' => array(
           'label' => 'above',
@@ -405,7 +679,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '14',
         ),
         'product_in_cart' => array(
           'label' => 'above',
@@ -496,7 +770,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '16',
         ),
         'node_product_list' => array(
           'label' => 'hidden',
@@ -514,7 +788,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '16',
         ),
         'product_in_cart' => array(
           'label' => 'above',
@@ -604,7 +878,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '11',
         ),
         'node_product_list' => array(
           'label' => 'above',
@@ -616,7 +890,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '11',
         ),
         'product_in_cart' => array(
           'label' => 'above',
@@ -701,7 +975,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '5',
         ),
         'node_product_list' => array(
           'label' => 'above',
@@ -713,7 +987,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '5',
         ),
         'product_in_cart' => array(
           'label' => 'above',
@@ -813,7 +1087,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '15',
         ),
         'node_product_list' => array(
           'label' => 'above',
@@ -825,7 +1099,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '15',
         ),
         'product_in_cart' => array(
           'label' => 'above',
@@ -907,7 +1181,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '10',
         ),
         'node_product_list' => array(
           'label' => 'above',
@@ -919,7 +1193,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '10',
         ),
         'product_in_cart' => array(
           'label' => 'above',
@@ -1001,7 +1275,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '12',
         ),
         'node_product_list' => array(
           'label' => 'above',
@@ -1013,7 +1287,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '12',
         ),
         'product_in_cart' => array(
           'label' => 'above',
@@ -1095,7 +1369,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '13',
         ),
         'node_product_list' => array(
           'label' => 'above',
@@ -1107,7 +1381,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '13',
         ),
         'product_in_cart' => array(
           'label' => 'above',
@@ -1187,9 +1461,14 @@ function commerce_kickstart_lite_product_field_default_fields() {
         ),
         'line_item' => array(
           'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'module' => 'title',
+          'settings' => array(
+            'title_class' => '',
+            'title_link' => '',
+            'title_style' => '',
+          ),
+          'type' => 'title_linked',
+          'weight' => '0',
         ),
         'node_product_list' => array(
           'label' => 'hidden',
@@ -1200,9 +1479,14 @@ function commerce_kickstart_lite_product_field_default_fields() {
         ),
         'node_teaser' => array(
           'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'module' => 'title',
+          'settings' => array(
+            'title_class' => '',
+            'title_link' => '',
+            'title_style' => '',
+          ),
+          'type' => 'title_linked',
+          'weight' => '0',
         ),
         'product_in_cart' => array(
           'label' => 'hidden',
@@ -1504,8 +1788,11 @@ function commerce_kickstart_lite_product_field_default_fields() {
   t('Category');
   t('Description');
   t('Feature Image');
+  t('Files');
   t('Format');
   t('Length');
+  t('License duration');
+  t('License type');
   t('Parts and score');
   t('Preview images');
   t('Price');

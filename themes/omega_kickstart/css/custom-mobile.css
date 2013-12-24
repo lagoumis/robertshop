@@ -415,7 +415,7 @@ div.messages.commerce-add-to-cart-confirmation .button.continue .commerce-add-to
 /** SHOPPING CART IN BRANDING ZONE **/
 #block-views-shopping-cart-block {
   float: right;
-  margin-right: 3px;
+  margin-right: 4px;
 }
 
 #block-views-shopping-cart-block .view-id-shopping_cart .line-item-summary ul {
@@ -442,7 +442,7 @@ div.messages.commerce-add-to-cart-confirmation .button.continue .commerce-add-to
 }
 
 #block-views-shopping-cart-block .view-id-shopping_cart .line-item-summary  .line-item-summary-checkout a:hover {
-  background: #b70000;
+  background: #B70000;
 }
 
 #block-views-shopping-cart-block .view-id-shopping_cart .view-empty p,
@@ -699,7 +699,7 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
 #block-views-blog-listing-page-block-2 {
   border: solid 1px #CFCFCF;
   border-top: none;
-  padding: 60px 20px 30px 20px;
+  padding: 60px 22px 30px 18px;
 }
 
 #block-views-fd259b03dfde27ef506189e23005cedc .block-title,
@@ -1436,7 +1436,7 @@ ol.inline.commerce-checkout-progress li.last.active:after {
 
 /** Login page **/
 .page-user #page #user-login #user_login_form {
-  border-right-color: #f1f1f1;
+  border: none;
 }
 
 .page-user #page #zone-content #user_login_form {
@@ -1483,8 +1483,9 @@ ol.inline.commerce-checkout-progress li.last.active:after {
 }
 
 .page-user #page form#user-login .create-account {
-  padding: 0 50px 0 70px;
-  width: 334px;
+  display: none;
+  /*padding: 0 50px 0 70px;
+  width: 334px;*/
 }
 
 .page-user  #page #zone-content .back-to-login .login-account {
@@ -1524,9 +1525,14 @@ ol.inline.commerce-checkout-progress li.last.active:after {
 
 /* MY ACCOUNT */
 #block-boxes-my-account {
+  display: block;
   float: right;
   margin-right: 60px;
   margin-top: 6px;
+}
+
+.not-logged-in #block-boxes-my-account {
+  display: none;
 }
 
 #block-boxes-my-account a {
@@ -1741,4 +1747,28 @@ ol.inline.commerce-checkout-progress li.last.active:after {
 
 .page-user #page .tabs ul.secondary li a.active:hover {
   text-decoration: none;
+}
+
+.commerce-paypal-icons {
+  margin-top: 16px;
+  margin-left: 0px;
+}
+
+.commerce-paypal-icon {
+  vertical-align: -2px;
+  margin-left: 4px;
+}
+
+#commerce-checkout-form-checkout #edit-account .fieldset-wrapper {
+  padding: 20px 0 20px 0;
+}
+
+.webform-confirmation {
+  margin-left: 20px;
+}
+
+
+/** Temporary hack - hide the shipping details **/
+.page-user .user-profile-category li:first-child {
+
 }

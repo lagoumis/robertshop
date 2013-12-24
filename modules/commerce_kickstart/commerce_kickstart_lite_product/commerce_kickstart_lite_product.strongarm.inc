@@ -135,6 +135,14 @@ function commerce_kickstart_lite_product_strongarm() {
             'weight' => '1',
             'visible' => FALSE,
           ),
+          'node_teaser' => array(
+            'weight' => '1',
+            'visible' => TRUE,
+          ),
+          'line_item' => array(
+            'weight' => '1',
+            'visible' => TRUE,
+          ),
         ),
         'title' => array(
           'default' => array(
@@ -162,6 +170,14 @@ function commerce_kickstart_lite_product_strongarm() {
           'product_in_cart' => array(
             'weight' => '3',
             'visible' => FALSE,
+          ),
+          'node_teaser' => array(
+            'weight' => '3',
+            'visible' => TRUE,
+          ),
+          'line_item' => array(
+            'weight' => '3',
+            'visible' => TRUE,
           ),
         ),
       ),
