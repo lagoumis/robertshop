@@ -1617,10 +1617,6 @@ ol.inline.commerce-checkout-progress li.last.active:after {
   width: 408px;
 }
 
-.page-user #page .profile ul.user-information li:first-child {
-  margin-right: 20px;
-}
-
 .page-user #page  .profile ul.user-information,
 .page-user #page .profile ul.user-information li {
   margin-left: 0;
@@ -1727,7 +1723,7 @@ ol.inline.commerce-checkout-progress li.last.active:after {
 }
 
 .page-user #page .tabs ul.secondary li a {
-  border: solid 1px #181818;
+  /*border: solid 1px #181818;*/
   display: inline-block;
   padding: 5px 10px;
 }
@@ -1741,11 +1737,12 @@ ol.inline.commerce-checkout-progress li.last.active:after {
   margin-left: 4px;
 }
 
-.page-user #page .tabs ul.secondary li a.active {
+/*.page-user #page .tabs ul.secondary li a.active {
   border: solid 1px #676767;
-}
+}*/
 
 .page-user #page .tabs ul.secondary li a.active:hover {
+  border: none;
   text-decoration: none;
 }
 
@@ -1769,6 +1766,14 @@ ol.inline.commerce-checkout-progress li.last.active:after {
 
 
 /** Temporary hack - hide the shipping details **/
-.page-user .user-profile-category li:first-child {
+.page-user .user-information li:first-child {
+  display: none;
+}
 
+.page-user #page .profile ul.user-information li:nth-child(2) {
+  margin-right: 20px;
+}
+
+.page-user-addressbook .tabs ul.secondary li:nth-child(2) { 
+  display: none;
 }
