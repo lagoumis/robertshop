@@ -120,6 +120,17 @@ a:hover {
   text-decoration: underline;
 }
 
+.node a:link, 
+.node a:visited {
+  color: #333;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.node a:hover {
+  text-decoration: none;
+}
+
 sup {
   vertical-align: super;
   font-size: 10px;
