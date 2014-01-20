@@ -590,13 +590,14 @@ function commerce_kickstart_lite_product_field_default_fields() {
           'weight' => '6',
         ),
       ),
+      'ds_extras_field_template' => '',
       'entity_type' => 'commerce_product',
       'fences_wrapper' => '',
       'field_name' => 'field_description',
       'label' => 'Description',
       'required' => 0,
       'settings' => array(
-        'text_processing' => '0',
+        'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -1031,100 +1032,6 @@ function commerce_kickstart_lite_product_field_default_fields() {
         ),
         'type' => 'media_generic',
         'weight' => '11',
-      ),
-    ),
-  );
-
-  // Exported field: 'commerce_product-product-field_product_type'.
-  $fields['commerce_product-product-field_product_type'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_product_type',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'text',
-      'settings' => array(
-        'max_length' => '255',
-      ),
-      'translatable' => '0',
-      'type' => 'text',
-    ),
-    'field_instance' => array(
-      'bundle' => 'product',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => 'Parts and score',
-      'display' => array(
-        'add_to_cart_confirmation_view' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '8',
-        ),
-        'default' => array(
-          'label' => 'inline',
-          'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
-          'weight' => '10',
-        ),
-        'line_item' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '15',
-        ),
-        'node_product_list' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'node_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '15',
-        ),
-        'product_in_cart' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '9',
-        ),
-      ),
-      'entity_type' => 'commerce_product',
-      'fences_wrapper' => '',
-      'field_name' => 'field_product_type',
-      'label' => 'Product type',
-      'required' => 0,
-      'settings' => array(
-        'text_processing' => '0',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'size' => '60',
-        ),
-        'type' => 'text_textfield',
-        'weight' => '7',
       ),
     ),
   );
@@ -1793,11 +1700,9 @@ function commerce_kickstart_lite_product_field_default_fields() {
   t('Length');
   t('License duration');
   t('License type');
-  t('Parts and score');
   t('Preview images');
   t('Price');
   t('Product');
-  t('Product type');
   t('Scored for');
   t('Title');
   t('Written for');

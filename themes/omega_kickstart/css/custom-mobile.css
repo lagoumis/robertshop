@@ -81,7 +81,11 @@ body {
   padding: 10px 10px 0 10px;
 }
 
-#page-title {
+.node-type-blog-post #page-title,
+.page-node-15 #page-title,
+.page-node-1 #page-title,
+.page-node-14 #page-title,
+.page-node-2 #page-title {
   display: none;
 }
 
@@ -415,7 +419,7 @@ div.messages.commerce-add-to-cart-confirmation .button.continue .commerce-add-to
 /** SHOPPING CART IN BRANDING ZONE **/
 #block-views-shopping-cart-block {
   float: right;
-  margin-right: 4px;
+  margin-right: -10px;
 }
 
 #block-views-shopping-cart-block .view-id-shopping_cart .line-item-summary ul {

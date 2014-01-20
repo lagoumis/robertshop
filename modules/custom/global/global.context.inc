@@ -26,23 +26,11 @@ function global_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'menu-menu-login-and-logout' => array(
-          'module' => 'menu',
-          'delta' => 'menu-login-and-logout',
-          'region' => 'branding',
-          'weight' => '-10',
-        ),
         'views-shopping_cart-block' => array(
           'module' => 'views',
           'delta' => 'shopping_cart-block',
           'region' => 'branding',
           'weight' => '-9',
-        ),
-        'boxes-my_account' => array(
-          'module' => 'boxes',
-          'delta' => 'my_account',
-          'region' => 'branding',
-          'weight' => '-8',
         ),
         'boxes-logo' => array(
           'module' => 'boxes',

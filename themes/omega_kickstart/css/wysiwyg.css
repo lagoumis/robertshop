@@ -10,9 +10,12 @@ h6 {
   letter-spacing: 0px;
 }
 
-h1 {
-  font-size: 50px;
+h1,
+h1#page-title {
+  font-size: 30px;
+  font-weight: 400;
   line-height: 51px;
+  text-transform: none;
 }
 
 h2,
@@ -164,12 +167,12 @@ hr {
 
 .subhead {
   color: #A0A0A0;
-  font-family: "open sans"
-  font-weight: normal;
-  font-size: 13px;
+  font-family: "open sans";
+  font-weight: 400;
+  font-size: 12px;
   font-style: italic;
   line-height: 25px;
-  margin-top: -5px;
+  margin-top: -7px;
 }
 
 .float-right {

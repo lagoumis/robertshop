@@ -45,7 +45,7 @@ function contact_page_default_box() {
     'body' => array(
       'value' => '<div class="small-header"><p>Friends of Rob</p></div>
 <div class="text-area">
-<h6 class="no-margin"><a href="http://www.ericklay.com/">Eric Klay</a></h6><p class="margin-bottom-20 small-sans-11">Musician (trumpet player)</p><h6 class="no-margin"><a href="http://www.move.com.au/artist/anthony-pope">Anthony Pope</a></h6 class="no-margin"><p class="margin-bottom-20 small-sans-11">Musician (trumpet player)</p><h6 class="no-margin"><a href="http://www.mso.com.au/">MSO</a></h6><p class="margin-bottom-20 small-sans-11">Melbourne symphony orchestra</p></div>',
+<h6 class="no-margin"><a href="http://www.ericklay.com/">Eric Klay</a></h6><p class="margin-bottom-20 small-sans-11">Musician (Bass Trombone)</p><h6 class="no-margin"><a href="http://www.move.com.au/artist/anthony-pope">Anthony Pope</a></h6 class="no-margin"><p class="margin-bottom-20 small-sans-11">Musician (Trumpet)</p><h6 class="no-margin"><a href="http://www.kookaburramusic.com/">Kookaburra Music</a></h6><p class="margin-bottom-20 small-sans-11">Music publishers</p></div>',
       'format' => 'php_code',
     ),
     'additional_classes' => '',

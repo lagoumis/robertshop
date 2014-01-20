@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Help area feature.
+ */
+
+include_once 'help_area.features.inc';

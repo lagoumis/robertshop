@@ -62,7 +62,6 @@ features[field][] = commerce_product-product-field_format
 features[field][] = commerce_product-product-field_images
 features[field][] = commerce_product-product-field_length
 features[field][] = commerce_product-product-field_preview_images
-features[field][] = commerce_product-product-field_product_type
 features[field][] = commerce_product-product-field_scored_for
 features[field][] = commerce_product-product-field_written_for
 features[field][] = commerce_product-product-field_year_written
