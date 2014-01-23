@@ -77,8 +77,8 @@ body {
 }
 
 .ds-3col > .group-middle {
- width: 440px;
-  padding: 10px 10px 0 10px;
+ width: 390px;
+  padding: 10px 25px 0 25px;
 }
 
 .node-type-blog-post #page-title,
@@ -86,7 +86,9 @@ body {
 .page-node-1 #page-title,
 .page-node-14 #page-title,
 .page-node-2 #page-title,
-.page-node-37 #page-title {
+.page-node-37 #page-title,
+.page-cart #page-title,
+.page-checkout #page-title {
   display: none;
 }
 
@@ -522,11 +524,11 @@ div.messages.commerce-add-to-cart-confirmation .button.continue .commerce-add-to
 #page .commerce-add-to-cart-confirmation .view-confirm-message-product-display .views-field-line-item-title .field-content {
   color: #181818;
   display: block;
-  font-size: 20px;
+  font-size: 16px;
   font-family: gentium;
   font-weight: 600;
   margin-bottom: 15px;
-  line-height: 22px;
+  line-height: 19px;
 }
 
 #page .commerce-add-to-cart-confirmation .commerce-product-sku .commerce-product-sku-label,
@@ -914,7 +916,7 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
   border: solid 1px #CFCFCF;
   border-top: none;
   position: relative;
-  padding: 50px 20px 20px 20px;
+  padding: 45px 20px 20px 20px;
 }
 
 #node_product_display_full_group_add legend {
@@ -940,6 +942,7 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
 
 #node_product_display_full_group_add .form-submit {
   margin-left: 0;
+  margin-top: 20px;
   width: 100%;
 }
 
@@ -952,12 +955,39 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
 }
 
 .node-product-type .field-name-field-product form.commerce-add-to-cart label {
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 .node-product-type .field-type-commerce-product-reference form.commerce-add-to-cart .form-item {
-  padding: 11px 0 20px 0;
-  text-align: center;
+  padding: 11px 0 5px 0;
+}
+
+.node-product-type .field-name-field-product form.commerce-add-to-cart label {
+  font-family: gentium;
+  font-size: 16px;
+}
+
+.node-product-type .field-type-commerce-product-reference form.commerce-add-to-cart label:after {
+  content: " ";
+}
+
+#node_product_display_full_group_add .commerce-add-to-cart .form-item {
+  margin-left: 28px;
+  text-align: left;
+}
+
+#node_product_display_full_group_add .commerce-add-to-cart .form-item select {
+  padding-right: 25px;
+  padding-left: 8px;
+}
+
+#block-views-product-images-block {
+  float: left;
+  margin-bottom: 30px;
+}
+
+#block-views-product-images-block .views-field-nothing {
+  margin: 6px 0;
 }
 
 /* Music: audio samples */
@@ -1020,16 +1050,23 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
   line-height: 22px;
 }
 
+.node-product-display .commerce-product-field-commerce-price .field-item {
+  color: #C40000;
+  font-weight: 700;
+  font-size: 24px;
+  font-family: gentium;
+}
+
+.node-product-display .commerce-product-field-commerce-price .field-item {
+  margin-top: 20px;
+}
+
 .node-product-display .field-label,
 .node-product-display  .commerce-product-field-field-description {
   font-family: gentium;
   font-size: 16px;
   margin-right: 3px;
   font-weight: 600;
-}
-
-.node-product-type .field-name-commerce-price {
-  font-family: gentium;
 }
 
 .node-product-display .commerce-product-field-field-description {

@@ -61,10 +61,10 @@ function commerce_kickstart_lite_product_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-preview_images-block' => array(
+        'views-product_images-block' => array(
           'module' => 'views',
-          'delta' => 'preview_images-block',
-          'region' => 'sidebar_first',
+          'delta' => 'product_images-block',
+          'region' => 'content',
           'weight' => '-10',
         ),
       ),

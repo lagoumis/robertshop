@@ -141,6 +141,12 @@ function commerce_kickstart_lite_product_views_default_views() {
   $handler->display->display_options['filters']['is_product_display']['table'] = 'node';
   $handler->display->display_options['filters']['is_product_display']['field'] = 'is_product_display';
   $handler->display->display_options['filters']['is_product_display']['value'] = '1';
+  $handler->display->display_options['filters']['is_product_display']['group'] = 1;
+  /* Filter criterion: Content: Product (field_product:delta) */
+  $handler->display->display_options['filters']['delta']['id'] = 'delta';
+  $handler->display->display_options['filters']['delta']['table'] = 'field_data_field_product';
+  $handler->display->display_options['filters']['delta']['field'] = 'delta';
+  $handler->display->display_options['filters']['delta']['value']['value'] = '0';
 
   /* Display: Listing */
   $handler = $view->new_display('block', 'Listing', 'block');

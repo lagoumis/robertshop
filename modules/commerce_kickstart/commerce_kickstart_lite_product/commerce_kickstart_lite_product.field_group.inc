@@ -24,7 +24,6 @@ function commerce_kickstart_lite_product_field_group_info() {
     'weight' => '8',
     'children' => array(
       0 => 'field_product',
-      1 => 'product:commerce_price',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
