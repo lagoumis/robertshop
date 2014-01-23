@@ -19,7 +19,7 @@ function home_page_default_box() {
   $box->description = 'Home page Bio box';
   $box->options = array(
     'body' => array(
-      'value' => '<div><div class="bio-info"><h4>Musician, Teacher, Composer</h4><p>Absolutely no idea what twitter is…</p></div><a href="/about" class="large-button">Find out more</a>
+      'value' => '<div><div class="bio-info"><h4>Looking for an original work?</h4><p>Contact Rob to request a commissioned piece.</p></div><a href="node/37" class="large-button">Find out more</a>
 </div>',
       'format' => 'php_code',
     ),

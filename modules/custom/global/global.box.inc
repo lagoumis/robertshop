@@ -19,12 +19,30 @@ function global_default_box() {
   $box->description = 'Copyright box';
   $box->options = array(
     'body' => array(
-      'value' => '<span class="symbol">©</span><span class="text">Copyright 2013 by Rob Sims</span>',
+      'value' => '<span class="symbol">©</span><span class="text">Copyright 2013 Robert Sims</span>',
       'format' => 'php_code',
     ),
     'additional_classes' => '',
   );
   $export['copyright_box'] = $box;
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
+  $box->delta = 'foot_help_links';
+  $box->plugin_key = 'simple';
+  $box->title = '';
+  $box->description = 'Footer help links';
+  $box->options = array(
+    'body' => array(
+      'value' => '<ul>
+<li><a href="node/36">Terms & Conditions</a></li>
+<li><a href="node/29">Help</a></li>
+</ul>',
+      'format' => 'php_code',
+    ),
+  );
+  $export['foot_help_links'] = $box;
 
   $box = new stdClass();
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */

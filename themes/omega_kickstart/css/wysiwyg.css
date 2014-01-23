@@ -28,7 +28,7 @@ h2 a:visited {
 }
 
 h2 a:hover {
-  text-decoration: underline;
+  color: #525252;
 }
 
 h3,
@@ -41,7 +41,7 @@ h3 a:visited {
 }
 
 h3 a:hover {
-  text-decoration: underline;
+  color: #525252;
 }
 
 h4,
@@ -54,7 +54,7 @@ h4 a:visited {
 }
 
 h4 a:hover {
-  text-decoration: underline;
+  color: #525252;
 }
 
 h5,
@@ -62,7 +62,7 @@ h5 a:link,
 h5 a:visited {
   font-size: 25px;
   line-height: 27px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   text-decoration: none;
 }
 
@@ -92,7 +92,7 @@ label {
 
 p, 
 li {
-  color: #616161;
+  color: #3d3d3d;
   font-family: "open sans";
   font-weight: normal;
   font-size: 13px;
@@ -105,11 +105,11 @@ p strong {
 
 .node li {
   margin-bottom: 8px;
-  margin-left: 15px;
+  margin-left: 17px;
 }
 
 .node ul, .node ol {
-  margin: 0 0 20px 40px;
+  margin: 0 0 20px 0;
   padding: 0;
 }
 

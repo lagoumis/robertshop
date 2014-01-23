@@ -20,12 +20,19 @@ function about_context_default_contexts() {
     'path' => array(
       'values' => array(
         'node/2' => 'node/2',
+        'node/37' => 'node/37',
       ),
     ),
   );
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'menu-menu-about-menu' => array(
+          'module' => 'menu',
+          'delta' => 'menu-about-menu',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
         'boxes-about_headshot' => array(
           'module' => 'boxes',
           'delta' => 'about_headshot',

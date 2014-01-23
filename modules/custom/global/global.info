@@ -9,6 +9,7 @@ dependencies[] = ctools
 dependencies[] = menu
 dependencies[] = views
 features[box][] = copyright_box
+features[box][] = foot_help_links
 features[box][] = logo
 features[box][] = my_account
 features[context][] = global

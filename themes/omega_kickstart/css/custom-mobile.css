@@ -85,7 +85,8 @@ body {
 .page-node-15 #page-title,
 .page-node-1 #page-title,
 .page-node-14 #page-title,
-.page-node-2 #page-title {
+.page-node-2 #page-title,
+.page-node-37 #page-title {
   display: none;
 }
 
@@ -569,10 +570,9 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
 }
 
 #block-boxes-copyright-box .boxes-box-content {
-  color: #515151;
+  color: #414141;
   font-family: "open sans", sans-serif;
   font-weight: 400;
-  letter-spacing: 1px;
 }
 
 #block-boxes-copyright-box .symbol {
@@ -580,7 +580,7 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
   float: left;
   font-size: 19px;
   font-weight: 200;
-  margin-right: 6px; 
+  margin-right: 4px; 
 }
 
 #block-boxes-copyright-box .text {
@@ -591,6 +591,7 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
 
 #block-boxes-copyright-box {
   float: right;
+  margin-right: -10px;
 }
 
 #block-boxes-copyright-box .boxes-box-controls {
@@ -619,6 +620,7 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
 }
 
 #block-block-2 .text {
+  color: #959595;
   font-family: "open sans", sans-serif;
   font-weight: 200;
   font-style: italic;
@@ -1142,9 +1144,10 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
 #block-views-latest-blog-posts-block .block-title,
 #block-views-blog-filter-terms-block .block-title,
 #block-views-archive-block .block-title {
-  height: 37px;
-  font-size: 20px;
-  font-family: gentium;
+  height: 32px;
+  font-size: 14px;
+  font-family: open sans;
+  font-weight: 700;
 }
 
 #block-views-archive-block li {
@@ -1823,5 +1826,62 @@ ol.inline.commerce-checkout-progress li.last.active:after {
 }
 
 #block-menu-menu-help-topics .content {
-  padding: 20px;
+  padding: 25px 20px 10px 20px;
+}
+
+/* Home footer links */
+#block-boxes-foot-help-links,
+#block-boxes-foot-help-links  li {
+  float: left;
+}
+
+#block-boxes-foot-help-links {
+  margin-left: -10px;
+}
+
+#block-boxes-foot-help-links li,
+#block-boxes-foot-help-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#block-boxes-foot-help-links li {
+  margin-right: 20px;
+}
+
+#block-boxes-foot-help-links ul {
+  margin-top: 5px;
+}
+
+#block-boxes-foot-help-links li a {
+  color: #838383;
+}
+
+/* About menu */
+#block-menu-menu-about-menu {
+   margin-bottom: 25px;
+}
+
+#block-menu-menu-about-menu h2.block-title {
+  display: none;
+}
+
+#block-menu-menu-about-menu li {
+  float: left;
+  list-style: none;
+}
+
+#block-menu-menu-about-menu li a {
+  display: inline-block;
+  font-size: 14px;
+  padding: 7px 17px;
+}
+
+#block-menu-menu-about-menu li a.active {
+  background: #181818;
+  border-radius: 10px;
+  color: #FFF;
+  font-weight: 200;
+  text-decoration: none;
 }

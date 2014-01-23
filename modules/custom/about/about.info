@@ -5,6 +5,7 @@ php = 5.2.4
 dependencies[] = boxes
 dependencies[] = context
 dependencies[] = ctools
+dependencies[] = menu
 features[box][] = about_anecdote
 features[box][] = about_headshot
 features[context][] = about

@@ -50,11 +50,17 @@ function global_context_default_contexts() {
           'region' => 'header_first',
           'weight' => '-9',
         ),
+        'boxes-foot_help_links' => array(
+          'module' => 'boxes',
+          'delta' => 'foot_help_links',
+          'region' => 'footer_first',
+          'weight' => '-10',
+        ),
         'boxes-copyright_box' => array(
           'module' => 'boxes',
           'delta' => 'copyright_box',
           'region' => 'footer_first',
-          'weight' => '-10',
+          'weight' => '-9',
         ),
       ),
     ),
