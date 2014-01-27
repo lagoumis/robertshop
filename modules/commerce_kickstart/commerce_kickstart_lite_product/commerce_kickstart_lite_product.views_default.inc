@@ -167,7 +167,7 @@ function commerce_kickstart_lite_product_views_default_views() {
   $handler->display->display_options['fields']['field_images']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_images']['settings'] = array(
     'image_style' => 'music-listing-small-125x178',
-    'image_link' => 'content',
+    'image_link' => '',
   );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -234,7 +234,7 @@ function commerce_kickstart_lite_product_views_default_views() {
   $handler->display->display_options['fields']['field_images']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_images']['settings'] = array(
     'image_style' => 'music_listing_feature_image',
-    'image_link' => 'content',
+    'image_link' => '',
   );
   $handler->display->display_options['fields']['field_images']['field_api_classes'] = TRUE;
   /* Field: Global: Custom text */

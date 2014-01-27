@@ -36,11 +36,12 @@ function global_default_box() {
   $box->options = array(
     'body' => array(
       'value' => '<ul>
-<li><a href="node/36">Terms & Conditions</a></li>
-<li><a href="node/29">Help</a></li>
+<li><a href="/node/36">Terms & Conditions</a></li>
+<li><a href="/node/29">Help</a></li>
 </ul>',
       'format' => 'php_code',
     ),
+    'additional_classes' => '',
   );
   $export['foot_help_links'] = $box;
 

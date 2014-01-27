@@ -1400,11 +1400,12 @@ function commerce_kickstart_lite_product_field_default_fields() {
           'weight' => '10',
         ),
       ),
+      'ds_extras_field_template' => '',
       'entity_type' => 'commerce_product',
       'fences_wrapper' => '',
       'field_name' => 'field_written_for',
       'label' => 'Written for',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'text_processing' => '0',
         'user_register_form' => FALSE,

@@ -1051,14 +1051,14 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
 }
 
 .node-product-display .commerce-product-field-commerce-price .field-item {
-  color: #C40000;
+  color: #181818;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 27px;
   font-family: gentium;
 }
 
 .node-product-display .commerce-product-field-commerce-price .field-item {
-  margin-top: 20px;
+  margin-top: 22px;
 }
 
 .node-product-display .field-label,

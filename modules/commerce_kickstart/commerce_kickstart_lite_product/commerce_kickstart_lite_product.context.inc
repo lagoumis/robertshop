@@ -54,7 +54,7 @@ function commerce_kickstart_lite_product_context_default_contexts() {
         'product_display' => 'product_display',
       ),
       'options' => array(
-        'node_form' => '1',
+        'node_form' => '0',
       ),
     ),
   );
