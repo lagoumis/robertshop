@@ -414,6 +414,16 @@ function commerce_kickstart_lite_product_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['content'] = 'Digital Sheet Music';
+  $handler->display->display_options['header']['area']['format'] = 'full_html';
+  /* Relationship: Commerce Product: Referencing Node */
+  $handler->display->display_options['relationships']['field_product']['id'] = 'field_product';
+  $handler->display->display_options['relationships']['field_product']['table'] = 'commerce_product';
+  $handler->display->display_options['relationships']['field_product']['field'] = 'field_product';
   /* Field: Field: Feature Image */
   $handler->display->display_options['fields']['field_images']['id'] = 'field_images';
   $handler->display->display_options['fields']['field_images']['table'] = 'field_data_field_images';
@@ -462,6 +472,16 @@ function commerce_kickstart_lite_product_views_default_views() {
   );
   $handler->display->display_options['fields']['field_preview_images']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_preview_images']['field_api_classes'] = TRUE;
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['relationship'] = 'field_product';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
 
   /* Display: Sidebar */
   $handler = $view->new_display('block', 'Sidebar', 'block');

@@ -19,9 +19,10 @@ function commerce_kickstart_lite_product_default_box() {
   $box->description = 'Music cart information';
   $box->options = array(
     'body' => array(
-      'value' => '<h2>Music Cart</h2><p>To change a product quantity simply enter the desired amount into the input area and click the “update cart” button. When you are ready to purchase, click “checkout”.</p>',
+      'value' => '<h2 class="margin-bottom-15">Music Cart</h2><p>To change a product quantity simply enter the desired amount into the input area and click the “update cart” button. &nbsp;When you are ready to purchase, click “checkout”.</p><p>All music on robertsims.com.au is digital sheet music. &nbsp;<strong>Please be aware that you will not recieve a printed copy of your score. &nbsp;</strong>For more information on digital music visit the&nbsp;<a href="/node/29">information area.</a></p><p>&nbsp;</p>',
       'format' => 'full_html',
     ),
+    'additional_classes' => '',
   );
   $export['music_cart'] = $box;
 

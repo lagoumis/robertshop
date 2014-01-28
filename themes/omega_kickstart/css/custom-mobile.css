@@ -858,6 +858,10 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
   text-decoration: none;
 }
 
+#block-boxes-home-bio-box h4 {
+  font-size: 32px;
+}
+
 /* Home: Contact form */
 #block-webform-client-block-18 {
   padding-bottom: 30px;
@@ -981,6 +985,18 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
   padding-left: 8px;
 }
 
+.node-type-product-display .field-name-field-format .field-label {
+  float: left;
+}
+
+.node-type-product-display .field-name-field-format p {
+  margin-bottom: 0;
+}
+
+.node-type-product-display  .field-name-field-length {
+  clear: left;
+}
+
 #block-views-product-images-block {
   float: left;
   margin-bottom: 30px;
@@ -988,6 +1004,20 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
 
 #block-views-product-images-block .views-field-nothing {
   margin: 6px 0;
+}
+
+#block-views-product-images-block .view-header {
+  background: #9C0000;
+  position: absolute; top: 0; left: 0;
+}
+
+#block-views-product-images-block .view-header p {
+  color: #fff;
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 7px 10px;
+  text-transform: uppercase;
 }
 
 /* Music: audio samples */
@@ -1340,6 +1370,7 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
 }
 
 .page-cart #region-content > .region-content-inner {
+  margin-bottom: 30px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -1376,6 +1407,17 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
 /* Music cart information box */
 #block-boxes-music-cart {
   padding: 10px 5px;
+}
+
+#block-boxes-music-cart a:link, 
+#block-boxes-music-cart a:visited {
+  color: #333;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#block-boxes-music-cart a:hover {
+  text-decoration: none;
 }
 
 /* CHECKOUT SCREENS */

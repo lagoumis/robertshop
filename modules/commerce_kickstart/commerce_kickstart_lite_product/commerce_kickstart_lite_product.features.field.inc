@@ -742,7 +742,8 @@ function commerce_kickstart_lite_product_field_default_fields() {
       'bundle' => 'product',
       'default_value' => array(
         0 => array(
-          'value' => 'Digital Sheet Music (PDF)',
+          'value' => '<p>Digital Sheet Music (PDF) <a href="/node/29" style="color: #C40000">What is Digital Music?</a></p>',
+          'format' => 'full_html',
         ),
       ),
       'deleted' => '0',
@@ -786,13 +787,14 @@ function commerce_kickstart_lite_product_field_default_fields() {
           'weight' => '12',
         ),
       ),
+      'ds_extras_field_template' => '',
       'entity_type' => 'commerce_product',
       'fences_wrapper' => '',
       'field_name' => 'field_format',
       'label' => 'Format',
       'required' => 0,
       'settings' => array(
-        'text_processing' => '0',
+        'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
