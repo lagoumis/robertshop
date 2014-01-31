@@ -742,7 +742,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
       'bundle' => 'product',
       'default_value' => array(
         0 => array(
-          'value' => '<p>Digital Sheet Music (PDF) <a href="/node/29" style="color: #C40000">What is Digital Music?</a></p>',
+          'value' => '<p>Digital Sheet Music (PDF) &nbsp;&nbsp;<a style="color: #c40000;" href="/node/29">What is Digital Music?</a></p>',
           'format' => 'full_html',
         ),
       ),
@@ -1248,11 +1248,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           '1 ' => ' Score & Parts',
-          '2 ' => ' Score',
-          '3 ' => ' Violin 1 Part',
-          '4 ' => ' Violin 2 Part',
-          '5 ' => ' Viola Part',
-          '6 ' => ' Cello Part',
+          '2 ' => ' Score Only',
         ),
         'allowed_values_function' => '',
       ),
@@ -1675,7 +1671,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '18',
+          'weight' => '19',
         ),
         'product_list' => array(
           'label' => 'above',
@@ -1707,7 +1703,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
           'apply_chosen' => 0,
         ),
         'type' => 'options_select',
-        'weight' => '34',
+        'weight' => '4',
       ),
     ),
   );
@@ -1799,7 +1795,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
           ),
         ),
         'type' => 'inline_entity_form',
-        'weight' => '33',
+        'weight' => '3',
       ),
     ),
   );
@@ -1883,7 +1879,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => '-5',
+        'weight' => '0',
       ),
     ),
   );

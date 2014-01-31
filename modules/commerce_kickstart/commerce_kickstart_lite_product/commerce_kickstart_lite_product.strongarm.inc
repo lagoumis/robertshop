@@ -216,13 +216,13 @@ function commerce_kickstart_lite_product_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'path' => array(
-          'weight' => '30',
+          'weight' => '2',
         ),
       ),
       'display' => array(
         'product:sku' => array(
           'default' => array(
-            'weight' => '28',
+            'weight' => '29',
             'visible' => FALSE,
           ),
           'product_list' => array(
@@ -232,13 +232,13 @@ function commerce_kickstart_lite_product_strongarm() {
         ),
         'product:title' => array(
           'default' => array(
-            'weight' => '27',
+            'weight' => '28',
             'visible' => FALSE,
           ),
         ),
         'product:status' => array(
           'default' => array(
-            'weight' => '29',
+            'weight' => '30',
             'visible' => FALSE,
           ),
           'product_list' => array(
@@ -258,7 +258,7 @@ function commerce_kickstart_lite_product_strongarm() {
         ),
         'product:field_images' => array(
           'default' => array(
-            'weight' => '25',
+            'weight' => '26',
             'visible' => FALSE,
           ),
           'product_list' => array(
@@ -272,7 +272,7 @@ function commerce_kickstart_lite_product_strongarm() {
             'visible' => FALSE,
           ),
           'default' => array(
-            'weight' => '26',
+            'weight' => '27',
             'visible' => FALSE,
           ),
         ),
@@ -284,13 +284,13 @@ function commerce_kickstart_lite_product_strongarm() {
         ),
         'product:field_year_written' => array(
           'default' => array(
-            'weight' => '4',
+            'weight' => '5',
             'visible' => TRUE,
           ),
         ),
         'product:field_format' => array(
           'default' => array(
-            'weight' => '5',
+            'weight' => '6',
             'visible' => TRUE,
           ),
         ),
@@ -302,31 +302,31 @@ function commerce_kickstart_lite_product_strongarm() {
         ),
         'product:field_length' => array(
           'default' => array(
-            'weight' => '6',
+            'weight' => '7',
             'visible' => TRUE,
           ),
         ),
         'product:field_scored_for' => array(
           'default' => array(
-            'weight' => '7',
+            'weight' => '8',
             'visible' => TRUE,
           ),
         ),
         'product:field_preview_images' => array(
           'default' => array(
-            'weight' => '30',
+            'weight' => '31',
             'visible' => FALSE,
           ),
         ),
         'product:field_description' => array(
           'default' => array(
-            'weight' => '3',
+            'weight' => '4',
             'visible' => TRUE,
           ),
         ),
         'product:field_audio_samples' => array(
           'default' => array(
-            'weight' => '9',
+            'weight' => '10',
             'visible' => TRUE,
           ),
         ),
@@ -338,25 +338,25 @@ function commerce_kickstart_lite_product_strongarm() {
         ),
         'product:commerce_license_duration' => array(
           'default' => array(
-            'weight' => '22',
+            'weight' => '23',
             'visible' => FALSE,
           ),
         ),
         'product:commerce_file' => array(
           'default' => array(
-            'weight' => '19',
+            'weight' => '20',
             'visible' => FALSE,
           ),
         ),
         'product:field_difficulty_new' => array(
           'default' => array(
-            'weight' => '23',
+            'weight' => '24',
             'visible' => FALSE,
           ),
         ),
         'product:field_type_new' => array(
           'default' => array(
-            'weight' => '24',
+            'weight' => '25',
             'visible' => FALSE,
           ),
         ),

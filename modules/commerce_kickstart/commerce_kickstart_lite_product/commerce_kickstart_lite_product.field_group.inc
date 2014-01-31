@@ -21,7 +21,7 @@ function commerce_kickstart_lite_product_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Purchase Music',
-    'weight' => '8',
+    'weight' => '9',
     'children' => array(
       0 => 'field_product',
     ),
