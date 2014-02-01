@@ -55,6 +55,16 @@ body {
   background: #262626;
 }  
   
+#page {
+  position: relative;
+  padding-bottom: 68px;
+}  
+
+#section-footer {
+  position: absolute; bottom: 0; left: 0;
+  width: 100%;
+}
+  
 .zone-content-wrapper .zone-content {
   margin-bottom: 0;
 }
@@ -88,7 +98,8 @@ body {
 .page-node-2 #page-title,
 .page-node-37 #page-title,
 .page-cart #page-title,
-.page-checkout #page-title {
+.page-checkout #page-title,
+.page-node-17 #page-title {
   display: none;
 }
 
@@ -662,8 +673,9 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
 .view-archive .views-row,
 #block-views-blog-listing-page-block .views-row {
   border-bottom: solid 1px #E7E7E7;
-  margin-bottom: 22px;
-  padding-bottom: 30px;
+  margin-bottom: 25px;
+  overflow: hidden;
+  padding-bottom: 25px;
   padding-right: 20px;
 }
 
@@ -1025,7 +1037,11 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
   border: solid 1px #CFCFCF;
   border-top: none;
   position: relative;
-  padding: 60px 25px 15px 20px;
+  padding: 60px 15px 15px 15px;
+}
+
+.node-product-display .field-name-field-audio-samples a {
+  font-size: 12px;
 }
 
 .node-product-display .field-name-field-audio-samples .label-above {
@@ -1244,7 +1260,8 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
   padding-left: 17px;
 }
 
-#block-views-blog-listing-page-block-1 .views-field-field-images img {
+#block-views-blog-listing-page-block-1 .views-field-field-images img,
+#block-views-blog-listing-page-block-1 .field-name-field-video-new img {
   float: left;
   padding-right: 25px;
 }

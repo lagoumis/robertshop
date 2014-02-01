@@ -33,7 +33,7 @@ function blog_feature_ds_field_settings_info() {
         ),
       ),
     ),
-    'field_images' => array(
+    'field_video_new' => array(
       'formatter_settings' => array(
         'ft' => array(),
       ),
@@ -63,13 +63,15 @@ function blog_feature_ds_layout_settings_info() {
         0 => 'field_images',
         1 => 'title_field',
         2 => 'post_date',
-        3 => 'body',
+        3 => 'field_video_new',
+        4 => 'body',
       ),
     ),
     'fields' => array(
       'field_images' => 'ds_content',
       'title_field' => 'ds_content',
       'post_date' => 'ds_content',
+      'field_video_new' => 'ds_content',
       'body' => 'ds_content',
     ),
     'classes' => array(),

@@ -178,18 +178,32 @@ function blog_feature_views_default_views() {
   $handler->display->display_options['fields']['field_images']['label'] = '';
   $handler->display->display_options['fields']['field_images']['element_type'] = '0';
   $handler->display->display_options['fields']['field_images']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_images']['empty'] = '<img src="/profiles/commerce_kickstart/themes/omega_kickstart/my-images/no-result-blog-post.png" width="300px" height="245px" />';
   $handler->display->display_options['fields']['field_images']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_images']['settings'] = array(
     'image_style' => 'blog_feature_image',
     'image_link' => '',
   );
+  /* Field: Content: Video */
+  $handler->display->display_options['fields']['field_video_new']['id'] = 'field_video_new';
+  $handler->display->display_options['fields']['field_video_new']['table'] = 'field_data_field_video_new';
+  $handler->display->display_options['fields']['field_video_new']['field'] = 'field_video_new';
+  $handler->display->display_options['fields']['field_video_new']['label'] = '';
+  $handler->display->display_options['fields']['field_video_new']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_video_new']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_video_new']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_video_new']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_video_new']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_video_new']['type'] = 'file_rendered';
+  $handler->display->display_options['fields']['field_video_new']['settings'] = array(
+    'file_view_mode' => 'media_small',
+  );
+  $handler->display->display_options['fields']['field_video_new']['field_api_classes'] = TRUE;
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="small-header"><p>Latest Post</p></div>';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="small-header"><p>Latest News</p></div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -236,7 +250,7 @@ function blog_feature_views_default_views() {
   /* Display: Blog home block */
   $handler = $view->new_display('block', 'Blog home block', 'block_2');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Latest blog';
+  $handler->display->display_options['title'] = 'Latest news';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
@@ -294,7 +308,7 @@ function blog_feature_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Latest posts';
+  $handler->display->display_options['title'] = 'Latest ';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';

@@ -340,7 +340,7 @@ function commerce_kickstart_lite_product_views_default_views() {
   $handler->display->display_options['fields']['field_description']['field'] = 'field_description';
   $handler->display->display_options['fields']['field_description']['relationship'] = 'field_product_product_id';
   $handler->display->display_options['fields']['field_description']['label'] = '';
-  $handler->display->display_options['fields']['field_description']['alter']['max_length'] = '200';
+  $handler->display->display_options['fields']['field_description']['alter']['max_length'] = '190';
   $handler->display->display_options['fields']['field_description']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_description']['element_type'] = 'p';
   $handler->display->display_options['fields']['field_description']['element_class'] = 'margin-bottom-20';

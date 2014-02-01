@@ -83,11 +83,14 @@ function blog_feature_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'taxonomy_blog' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
         'path' => array(
-          'weight' => '3',
+          'weight' => '4',
         ),
       ),
       'display' => array(),
