@@ -36,7 +36,7 @@ function about_default_box() {
   $box->description = 'About headshot box';
   $box->options = array(
     'body' => array(
-      'value' => '<img  src="/profiles/commerce_kickstart/themes/omega_kickstart/my-images/about-image.png" width="220px" height="220px"/><p class="quote">Music expresses that which cannot be said and on which it is impossible to be silent.</p><p><em>～ Victor Hugo</em></p>',
+      'value' => '<img  src="/profiles/commerce_kickstart/themes/omega_kickstart/my-images/about-image.jpg" width="220px" height="220px"/><p class="quote">Music expresses that which cannot be said and on which it is impossible to be silent.</p><p><em>～ Victor Hugo</em></p>',
       'format' => 'php_code',
     ),
     'additional_classes' => '',

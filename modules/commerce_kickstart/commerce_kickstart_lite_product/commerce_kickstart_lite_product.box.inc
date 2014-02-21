@@ -35,7 +35,7 @@ function commerce_kickstart_lite_product_default_box() {
   $box->description = 'Robs Music Information';
   $box->options = array(
     'body' => array(
-      'value' => '<h4>Rob\'s Music</h4><p>Welcome to my music page. &nbsp;This is a list of all my finished pieces. &nbsp;Click on a work to see more information and purchasing details.</p><p>If you have any questions please contact me via my contact form below</p>',
+      'value' => '<h4>Rob\'s Music</h4><p>Welcome to my music page. &nbsp;This is a list of all my finished pieces. &nbsp;Click on a work to see more information and purchasing details.</p><p>If you have any questions please contact me via my <strong><a href="/contact">contact form.</a></strong></p>',
       'format' => 'full_html',
     ),
     'additional_classes' => '',

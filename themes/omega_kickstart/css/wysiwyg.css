@@ -12,6 +12,7 @@ h6 {
 
 h1,
 h1#page-title {
+  color: #070707;
   font-size: 40px;
   font-weight: 400;
   line-height: 51px;
@@ -22,6 +23,7 @@ h1#page-title {
 h2,
 h2 a:link,
 h2 a:visited {
+  color: #070707;
   font-size: 40px;
   line-height: 40px;
   margin-bottom: 5px;
@@ -35,6 +37,7 @@ h2 a:hover {
 h3,
 h3 a:link,
 h3 a:visited {
+  color: #070707;
   font-size: 35px;
   line-height: 37px;
   margin-bottom: 5px;
@@ -48,6 +51,7 @@ h3 a:hover {
 h4,
 h4 a:link,
 h4 a:visited {
+  color: #070707;
   font-size: 30px;
   line-height: 29px;
   margin-bottom: 5px;
@@ -61,6 +65,7 @@ h4 a:hover {
 h5,
 h5 a:link,
 h5 a:visited {
+  color: #070707;
   font-size: 25px;
   line-height: 27px;
   margin-bottom: 10px;
@@ -68,12 +73,14 @@ h5 a:visited {
 }
 
 h5 a:hover {
+  color: #525252;
   text-decoration: underline;
 }
 
 h6,
 h6 a:link,
 h6 a:visited {
+  color: #070707;
   font-size: 18px;
   line-height: 20px;
   margin-bottom: 5px;
@@ -81,6 +88,7 @@ h6 a:visited {
 }
 
 h6 a:hover {
+  color: #525252;
   text-decoration: underline;
 }
 
@@ -126,7 +134,7 @@ a:hover {
 
 .node a:link, 
 .node a:visited {
-  color: #333;
+  color: #070707;
   font-weight: bold;
   text-decoration: underline;
 }

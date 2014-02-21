@@ -1106,7 +1106,7 @@ function commerce_kickstart_lite_product_field_default_fields() {
         'alt_field' => 0,
         'default_image' => 0,
         'file_directory' => '',
-        'file_extensions' => 'png gif jpg jpeg',
+        'file_extensions' => 'jpeg png',
         'max_filesize' => '',
         'max_resolution' => '',
         'min_resolution' => '',
@@ -1118,10 +1118,11 @@ function commerce_kickstart_lite_product_field_default_fields() {
         'module' => 'media',
         'settings' => array(
           'allowed_schemes' => array(
+            'private' => 0,
             'public' => 'public',
+            'youtube' => 0,
           ),
           'allowed_types' => array(
-            0 => 0,
             'audio' => 0,
             'default' => 0,
             'image' => 'image',

@@ -1275,6 +1275,11 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
   padding-top: 20px;
 }
 
+.page-archive #page-title {
+  color: #070707;
+  font-size: 22px;
+}
+
 /**CART**/
 .page-cart .commerce-line-item-actions #edit-checkout {
   display: none;

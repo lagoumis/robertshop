@@ -111,12 +111,6 @@ function commerce_kickstart_lite_product_context_default_contexts() {
           'region' => 'sidebar_first',
           'weight' => '-9',
         ),
-        'webform-client-block-18' => array(
-          'module' => 'webform',
-          'delta' => 'client-block-18',
-          'region' => 'sidebar_first',
-          'weight' => '-8',
-        ),
       ),
     ),
   );
