@@ -37,6 +37,7 @@ function global_default_box() {
     'body' => array(
       'value' => '<ul>
 <li><a href="/node/36">Terms & Conditions</a></li>
+<li><a href="/node/38">Privacy Policy</a></li>
 <li><a href="/node/29">Help</a></li>
 </ul>',
       'format' => 'php_code',

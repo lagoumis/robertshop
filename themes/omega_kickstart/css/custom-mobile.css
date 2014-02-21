@@ -1014,6 +1014,11 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
   margin-bottom: 30px;
 }
 
+#block-views-product-images-block .field-name-field-preview-images .field-item {
+  float: left;
+  margin-right: 20px;
+}
+
 #block-views-product-images-block .views-field-nothing {
   margin: 6px 0;
 }
@@ -1089,7 +1094,7 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
 }
 
 .node-product-display .group-middle .field-item {
-  color: #616161;
+  color: #3d3d3d;
   font-family: "open sans", sans-serif;
   font-weight: normal;
   font-size: 13px;
@@ -1271,6 +1276,32 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
 }
 
 /**CART**/
+.page-cart .commerce-line-item-actions #edit-checkout {
+  display: none;
+}
+
+.page-cart .commerce-line-item-actions {
+  float: left;
+  margin-left: 625px;
+  margin-top: 7px;
+}
+
+.page-cart #block-block-1,
+.page-checkout #block-block-1,
+.page-cart #block-block-2,
+.page-checkout #block-block-2 {
+  display: none;
+}
+
+.page-cart .paypal-ec-order-form #edit-paypal-ec {
+  background: #fff;
+  margin-right: -10px;
+}
+
+.page-cart .paypal-ec-order-form {
+  float: right;
+}
+
 #page #views-form-commerce-cart-form-default .commerce-line-item-actions #edit-submit {
   margin-right: 5px;
 }
