@@ -55,7 +55,7 @@ function global_default_box() {
   $box->description = 'Logo box';
   $box->options = array(
     'body' => array(
-      'value' => '<img src="/profiles/commerce_kickstart/themes/omega_kickstart/my-images/dad-logo.png" width="408px" height="50px" />',
+      'value' => '<a href="/"><img src="/profiles/commerce_kickstart/themes/omega_kickstart/my-images/dad-logo.png" width="408px" height="50px" /></a>',
       'format' => 'php_code',
     ),
     'additional_classes' => '',

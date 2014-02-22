@@ -55,16 +55,6 @@ body {
   background: #262626;
 }  
   
-#page {
-  position: relative;
-  padding-bottom: 68px;
-}  
-
-#section-footer {
-  position: absolute; bottom: 0; left: 0;
-  width: 100%;
-}
-  
 .zone-content-wrapper .zone-content {
   margin-bottom: 0;
 }
@@ -932,7 +922,7 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
   border: solid 1px #CFCFCF;
   border-top: none;
   position: relative;
-  padding: 45px 20px 20px 20px;
+  padding: 32px 20px 20px 20px;
 }
 
 #node_product_display_full_group_add legend {
@@ -2016,4 +2006,9 @@ ol.inline.commerce-checkout-progress li.last.active:after {
   color: #FFF;
   font-weight: 200;
   text-decoration: none;
+}
+
+
+#zone-content {
+  min-height: 511px;
 }
