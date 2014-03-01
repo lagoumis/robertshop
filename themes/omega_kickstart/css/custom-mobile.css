@@ -64,6 +64,10 @@ body {
   width: 960px;
 }
 
+.not-logged-in .tabs {
+  display: none;
+}
+
 #zone-menu-wrapper {
  background: #181818;
 }
@@ -2012,6 +2016,9 @@ ol.inline.commerce-checkout-progress li.last.active:after {
   display: none;
 }
 
+#zone-content {
+  min-height: 500px;
+}
 
 /*......
 body {
