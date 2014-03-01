@@ -16,10 +16,6 @@ Subhead grey - #A0A0A0;
   padding: 0;
 }
 
-.section-content {
-  min-height: 0;
-}
-
 .node-product-type .field-type-commerce-product-reference form.commerce-add-to-cart label {
   width: auto;
 }
@@ -89,7 +85,8 @@ body {
 .page-node-37 #page-title,
 .page-cart #page-title,
 .page-checkout #page-title,
-.page-node-17 #page-title {
+.page-node-17 #page-title,
+.page-node-42 #page-title {
   display: none;
 }
 
@@ -1284,7 +1281,9 @@ div.messages.commerce-add-to-cart-confirmation .message-inner .view-confirm-mess
 .page-cart #block-block-1,
 .page-checkout #block-block-1,
 .page-cart #block-block-2,
-.page-checkout #block-block-2 {
+.page-checkout #block-block-2,
+.node-type-help-page #block-block-1, 
+.node-type-help-page #block-block-2 {
   display: none;
 }
 
@@ -2008,7 +2007,32 @@ ol.inline.commerce-checkout-progress li.last.active:after {
   text-decoration: none;
 }
 
+.page-node-18 #page-title,
+.page-node-17 #page-title {
+  display: none;
+}
+
+
+/*......
+body {
+  height: 100%;
+  overflow-x: visible;
+}
+
+#page {
+  position: relative;
+  height: 100%;
+}
 
 #zone-content {
-  min-height: 511px;
+  height: 100%;
+}
+
+#zone-content-wrapper {
+  overflow: hidden;
+}
+
+.section-content {
+  min-height: 0;
+  height: 100%;
 }

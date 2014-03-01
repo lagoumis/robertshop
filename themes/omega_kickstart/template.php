@@ -57,6 +57,21 @@ function omega_kickstart_preprocess_field(&$variables) {
  * Override the submitted variable.
  */
 function omega_kickstart_preprocess_node(&$variables) {
+//   $products = array();
+//   foreach($variables['field_product'] as $prod_field) {
+//   	$product = commerce_product_load($prod_field['product_id']);
+//   	$products[] = $product;
+//   }
+//   foreach($products as $prod) {
+// 	  $uri = $prod->field_product_pdf['und'][0]['uri'];
+// 	  $url = file_create_url($uri);
+// 	  dpm(drupal_realpath($uri));
+//   }
+// // 	 $line_item = commerce_line_item_load($line[0]['line_item_id']);
+//    $product_id = $line_item->commerce_product;
+// 
+//    print_r($line_item);
+//    print_r($product_id);
   $variables['submitted'] = $variables['date'] . ' - ' . $variables['name'];
   if ($variables['type'] == 'blog_post') {
     $variables['submitted'] = t('By') . ' ' . $variables['name'] . ', ' . $variables['date'];

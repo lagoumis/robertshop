@@ -21,6 +21,7 @@ function about_context_default_contexts() {
       'values' => array(
         'node/2' => 'node/2',
         'node/37' => 'node/37',
+        'node/42' => 'node/42',
       ),
     ),
   );

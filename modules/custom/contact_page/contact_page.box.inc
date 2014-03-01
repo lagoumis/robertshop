@@ -23,7 +23,7 @@ function contact_page_default_box() {
 <div class="text-area">
 <h4>Robert Sims</h4><p class="subhead">Based in Melbourne</p>
 
-<img src="/profiles/commerce_kickstart/themes/omega_kickstart/my-images/email-icon.png" width="44px" height="38px"/><p class="text">Preferred form of contact</p><p class="small-sans-11 margin-bottom-20">rsims.music@gmail.com or use our contact form opposite.</strong> .</p>
+<img src="/profiles/commerce_kickstart/themes/omega_kickstart/my-images/email-icon.png" width="44px" height="38px"/><p class="text">Preferred form of contact</p><p class="small-sans-11 margin-bottom-20">rsims.music@gmail.com or use our contact form.</strong></p>
 
 <img src="/profiles/commerce_kickstart/themes/omega_kickstart/my-images/phone-icon.png" width="47px" height="38px"/><p class="text">Currently not available</p><p class="small-sans-11">If you prefer to talk over the phone, please email me your number and I will call you directly.</p>
 
