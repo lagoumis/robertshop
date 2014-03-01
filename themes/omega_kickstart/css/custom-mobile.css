@@ -2015,31 +2015,31 @@ ol.inline.commerce-checkout-progress li.last.active:after {
 .page-node-17 #page-title {
   display: none;
 }
-
-#zone-content {
-  min-height: 500px;
-}
-
-/*......
-body {
-  height: 100%;
-  overflow-x: visible;
-}
-
+/**
 #page {
   position: relative;
+  overflow: hidden;
   height: 100%;
 }
 
 #zone-content {
+  padding-bottom: 68px;
   height: 100%;
 }
 
-#zone-content-wrapper {
-  overflow: hidden;
+#section-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .section-content {
   min-height: 0;
   height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow: visible;
 }
